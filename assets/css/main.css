@@ -286,3 +286,66 @@ a:hover {
   margin-top: 5.25rem;
   transition: all .5s;
 }
+
+.is-why {
+  background-repeat: no-repeat !important;
+  background-position: right center !important;
+  -webkit-background-size: contain !important;
+  background-size: contain !important;
+}
+
+.is-why h3 {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #252724;
+  max-width: 90%;
+  margin-top: 5.9375rem;
+}
+
+.is-why h3 span {
+  color: #84AF5A;
+}
+
+.is-why p {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: #252724;
+  margin-top: 2.8125rem;
+  max-width: 90%;
+}
+
+.is-why .col-lg-7 {
+  position: relative;
+  padding-bottom: 5.625rem;
+}
+
+.is-why .col-lg-7 .verticaline {
+  border: 1px solid #F9B024;
+  transform: rotate(90deg);
+  width: 200px;
+  height: 1px !important;
+  display: block;
+  position: absolute;
+  bottom: calc(0% + 100px);
+  left: calc(0% - 170px);
+}
+
+.is-why .col-lg-7 .verticaline.v2 {
+  bottom: auto;
+  left: auto;
+  top: calc(0% + 50px);
+  right: calc(0% - 100px);
+}
+
+.is-why .col-lg-5 {
+  background-position: center !important;
+  -webkit-background-size: cover !important;
+  background-size: cover !important;
+}
