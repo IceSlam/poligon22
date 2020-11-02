@@ -349,3 +349,53 @@ a:hover {
   -webkit-background-size: cover !important;
   background-size: cover !important;
 }
+
+.is-advantages {
+  background: url(../img/advantages_bg.png);
+}
+
+.is-advantages .col {
+  background: rgba(52,165,229,.5);
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.is-advantages .col:nth-child(2n) {
+  background: rgba(83,182,238,.5);
+}
+
+.is-advantages .col:hover {
+  transform: scale(1.1);
+  transition: all .5s;
+  background: rgba(52,165,229,1);
+}
+
+.is-advantages .col img {
+  margin-top: 3.25rem;
+}
+
+.is-advantages .col h4 {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.is-advantages .col p {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.is-suiplace {
+  padding: 2rem 0;
+}
