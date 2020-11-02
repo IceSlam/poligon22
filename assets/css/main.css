@@ -56,3 +56,58 @@ body {
   color: #252724;
   margin-bottom: 0;
 }
+
+.is-header .is-header__phone {
+  margin-top: 1rem;
+}
+
+.is-header .is-header__phone .tel {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #F9B024;
+}
+
+.is-header .is-header__socials {
+  margin-top: .25rem;
+}
+
+.is-header .is-header__socials .social {
+  color: #fff;
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+  background: #34A5E6;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #34A5E6;
+  transition: all .625s;
+}
+
+.is-header .is-header__socials .social:hover {
+  background: #fff;
+  color: #34A5E6;
+  transition: all .625s;
+}
+
+.is-header .is-header__games-order {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #D93636;
+  border-radius: 40px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 1rem 2rem;
+  margin-top: 1.5rem;
+}
