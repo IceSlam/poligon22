@@ -1,0 +1,58 @@
+body {
+
+}
+
+.is-header {
+  padding: 1.25rem 0;
+}
+
+.is-header .is-brand__logo {
+  float: left;
+  margin-right: 1rem;
+}
+
+.is-header .is-brand__title {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #252724;
+  margin-bottom: 0;
+  margin-top: .875rem;
+}
+
+.is-header .is-brand__description {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 120%;
+  color: #252724;
+  margin-bottom: 0;
+  margin-top: .5rem;
+}
+
+.is-header .is-header__games-counter {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 160%;
+  text-transform: uppercase;
+  color: #252724;
+  margin-bottom: 0;
+  margin-top: .625rem;
+}
+
+.is-header .is-header__games-type {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 160%;
+  text-transform: uppercase;
+  color: #252724;
+  margin-bottom: 0;
+}
