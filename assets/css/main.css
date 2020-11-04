@@ -856,3 +856,7 @@ a:hover {
   text-transform: uppercase;
   color: #FFFFFF;
 }
+
+.is-photogalery {
+  padding: 5.625rem 0;
+}
