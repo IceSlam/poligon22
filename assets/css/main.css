@@ -970,3 +970,136 @@ a:hover {
   opacity: 1;
   transition: opacity .5s;
 }
+
+.is-videoreviews {
+  padding-bottom: 5.625rem;
+}
+
+.is-videoreviews h2 {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #252724;
+}
+
+.is-videoreviews .uk-light .uk-slidenav {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  background: #34A5E6;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: background .5s;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+}
+
+.is-videoreviews .uk-light .uk-slidenav:hover {
+  background: #84AF5A;
+  transition: background .5s;
+}
+
+.is-videoreviews .uk-light .uk-slidenav.uk-slidenav-previous {
+  right: 4rem;
+}
+
+.is-videoreviews .uk-slider .uk-dotnav {
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.is-videoreviews .uk-slider .uk-dotnav li a{
+  border: 0px !important;
+  width: 8px;
+  height: 8px;
+  background: #252724;
+  opacity: .2;
+}
+
+.is-videoreviews .uk-slider .uk-dotnav li.uk-active a {
+  background: #252724;
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  border: 0px;
+}
+
+.is-videoreviews .uk-slider .uk-slider-items li {
+  cursor: pointer;
+}
+
+.is-videoreviews .uk-slider .uk-slider-items li svg .wave {
+  opacity: 1;
+  transition: opacity .5s;
+}
+
+.is-videoreviews .uk-slider .uk-slider-items li svg .wave:nth-child(1) {
+  opacity: .2;
+  transition-delay: .15s;
+}
+
+.is-videoreviews .uk-slider .uk-slider-items li svg .wave:nth-child(2) {
+  opacity: .3;
+  transition-delay: .1s;
+}
+
+.is-videoreviews .uk-slider .uk-slider-items li svg .wave:nth-child(3) {
+  opacity: .5;
+  transition-delay: .05s;
+}
+
+.is-videoreviews .uk-slider .uk-slider-items li:hover svg .wave:nth-child(1) {
+  transition-delay: .05s;
+}
+
+.is-videoreviews .uk-slider .uk-slider-items li:hover svg .wave:nth-child(2) {
+  transition-delay: .1s;
+}
+
+.is-videoreviews .uk-slider .uk-slider-items li:hover svg .wave:nth-child(3) {
+  transition-delay: .15s;
+}
+
+.is-videoreviews .uk-slider .uk-slider-items li:hover svg .wave {
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.is-videoreviews .uk-slider .uk-slider-items li svg .round,
+.is-videoreviews .uk-slider .uk-slider-items li svg path {
+  transition: fill .5s;
+}
+
+.is-videoreviews .uk-slider .uk-slider-items li:hover svg .round {
+  fill: #F9B024;
+  transition: fill .5s;
+}
+
+.is-videoreviews .uk-slider .uk-slider-items li:hover svg path {
+  fill: #fff;
+  transition: fill .5s;
+}
+
+.is-videoreviews .uk-slider .uk-slider-items li .mask {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(33, 52, 16, 0.3);
+  transition: background .5s;
+}
+
+.is-videoreviews .uk-slider .uk-slider-items li:hover .mask {
+  background: transparent;
+  transition: background .5s;
+}
