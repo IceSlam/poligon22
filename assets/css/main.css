@@ -885,6 +885,7 @@ a:hover {
   background-position: center !important;
   border-radius: 0;
   margin-bottom: 1.875rem;
+  position: relative;
 }
 
 .is-photogalery .card.long {
@@ -893,4 +894,79 @@ a:hover {
 
 .is-photogalery .card.short {
   min-height: 220px;
+}
+
+.is-photogalery .card .mask {
+  transition: background .5s;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.is-photogalery .card:hover .mask {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: background .5s;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.is-photogalery .card .mask .angle {
+  transition: all .5s;
+}
+
+.is-photogalery .card:hover .mask .angle {
+  display: block;
+  width: 20px;
+  height: 20px;
+  transition: all .5s;
+  position: absolute;
+  border: 1px solid #F9B024;
+}
+
+.is-photogalery .card:hover .mask .angle.top-left {
+  left: 10px;
+  top: 10px;
+  border-right: 0px;
+  border-bottom: 0px;
+}
+
+.is-photogalery .card:hover .mask .angle.top-right {
+  right: 10px;
+  top: 10px;
+  border-left: 0px;
+  border-bottom: 0px;
+}
+
+.is-photogalery .card:hover .mask .angle.bottom-right {
+  right: 10px;
+  bottom: 10px;
+  border-left: 0px;
+  border-top: 0px;
+}
+
+.is-photogalery .card:hover .mask .angle.bottom-left {
+  left: 10px;
+  bottom: 10px;
+  border-right: 0px;
+  border-top: 0px;
+}
+
+.is-photogalery .card .mask img {
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.is-photogalery .card:hover .mask img {
+  opacity: 1;
+  transition: opacity .5s;
 }
