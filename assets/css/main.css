@@ -649,7 +649,8 @@ a:hover {
   color: #252724;
 }
 
-.is-weapons .view {
+.is-weapons .view,
+.is-photogalery .view {
   font-family: Rubik;
   font-style: normal;
   font-weight: 500;
@@ -663,17 +664,20 @@ a:hover {
   margin-top: .25rem;
 }
 
-.is-weapons .view:hover {
+.is-weapons .view:hover,
+.is-photogalery .view:hover {
   color: #34A5E6;
   transition: all .5s;
 }
 
-.is-weapons .view span {
+.is-weapons .view span,
+.is-photogalery .view span {
   border-bottom: 1px solid #34A5E6;
   margin-left: .25rem;
 }
 
-.is-weapons .view:hover span {
+.is-weapons .view:hover span,
+.is-photogalery .view:hover span {
   border-bottom: 0px;
 }
 
@@ -859,4 +863,34 @@ a:hover {
 
 .is-photogalery {
   padding: 5.625rem 0;
+}
+
+.is-photogalery h2 {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #252724;
+}
+
+.is-photogalery .card {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  cursor: pointer;
+  background-repeat: no-repeat !important;
+  -webkit-background-size: cover !important;
+  background-size: cover !important;
+  background-position: center !important;
+  border-radius: 0;
+  margin-bottom: 1.875rem;
+}
+
+.is-photogalery .card.long {
+  min-height: 470px;
+}
+
+.is-photogalery .card.short {
+  min-height: 220px;
 }
