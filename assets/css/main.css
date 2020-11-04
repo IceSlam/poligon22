@@ -632,3 +632,149 @@ a:hover {
   color: #FFFFFF;
   transition: all .5s;
 }
+
+.is-weapons {
+  padding-top: 5.625rem;
+  padding-bottom: 5.625rem;
+}
+
+.is-weapons h2 {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #252724;
+}
+
+.is-weapons .view {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #252724;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  transition: all .5s;
+  margin-top: .25rem;
+}
+
+.is-weapons .view:hover {
+  color: #34A5E6;
+  transition: all .5s;
+}
+
+.is-weapons .view span {
+  border-bottom: 1px solid #34A5E6;
+  margin-left: .25rem;
+}
+
+.is-weapons .view:hover span {
+  border-bottom: 0px;
+}
+
+.is-weapons .card {
+  padding: 1.5625rem;
+  border: 1px dashed #D9DDD5;
+  box-sizing: border-box;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0px;
+  position: relative;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.is-weapons .card:hover {
+  background: #F6F9F3;
+  transition: all .5s;
+}
+
+.is-weapons .card .btn.plus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  bottom: -6px;
+  left: -5.5px;
+}
+
+.is-weapons .card .img-block {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  width: 100%;
+  min-height: 250px;
+  max-height: 250px;
+  background: #F6F9F3;
+  justify-content: center;
+  align-items: center;
+  transition: background .5s;
+}
+
+.is-weapons .card:hover .img-block {
+  background: #fff;
+  transition: background .5s;
+}
+
+.is-weapons .card .img-block img {
+  max-width: 75%;
+}
+
+.is-weapons .card .title {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #252724;
+  margin-top: 1.5625rem;
+  transition: all .5s;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+}
+
+.is-weapons .card .title::before {
+  content: '+';
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  width: 0;
+  height: 25px;
+  border-radius: 50%;
+  background: #34A5E6;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  float: left;
+  transition: all .5s;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  font-weight: 200;
+  padding-left: 2px;
+  padding-bottom: 2px;
+}
+
+.is-weapons .card:hover .title::before {
+  width: 25px;
+  margin-right: .625rem;
+  transition: all .5s;
+  opacity: 1;
+}
+
+.is-weapons .card:hover .title {
+  color: #34A5E6;
+  transition: all .5s;
+}
