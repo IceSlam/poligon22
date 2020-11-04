@@ -886,6 +886,7 @@ a:hover {
   border-radius: 0;
   margin-bottom: 1.875rem;
   position: relative;
+  overflow: hidden;
 }
 
 .is-photogalery .card.long {
@@ -897,7 +898,7 @@ a:hover {
 }
 
 .is-photogalery .card .mask {
-  transition: background .5s;
+  transition: background .625s;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -912,7 +913,7 @@ a:hover {
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.5);
-  transition: background .5s;
+  transition: background .625s;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -921,16 +922,35 @@ a:hover {
 }
 
 .is-photogalery .card .mask .angle {
-  transition: all .5s;
+  opacity: 0;
+  transform: scale(0);
+  transition:
+      opacity .5s,
+      top .5s,
+      left .5s,
+      bottom .5s,
+      right .5s;
 }
 
 .is-photogalery .card:hover .mask .angle {
+  opacity: 1;
   display: block;
   width: 20px;
   height: 20px;
-  transition: all .5s;
   position: absolute;
   border: 1px solid #F9B024;
+  transform: scale(1);
+  transition:
+      opacity .5s,
+      top .5s,
+      left .5s,
+      bottom .5s,
+      right .5s;
+}
+
+.is-photogalery .card .mask .angle.top-left {
+  top: -10px;
+  left: -10px;
 }
 
 .is-photogalery .card:hover .mask .angle.top-left {
@@ -940,6 +960,11 @@ a:hover {
   border-bottom: 0px;
 }
 
+.is-photogalery .card .mask .angle.top-right {
+  right: -10px;
+  top: -10px;
+}
+
 .is-photogalery .card:hover .mask .angle.top-right {
   right: 10px;
   top: 10px;
@@ -947,11 +972,21 @@ a:hover {
   border-bottom: 0px;
 }
 
+.is-photogalery .card .mask .angle.bottom-right {
+  right: -10px;
+  bottom: -10px;
+}
+
 .is-photogalery .card:hover .mask .angle.bottom-right {
   right: 10px;
   bottom: 10px;
   border-left: 0px;
   border-top: 0px;
+}
+
+.is-photogalery .card .mask .angle.bottom-left {
+  left: -10px;
+  bottom: -10px;
 }
 
 .is-photogalery .card:hover .mask .angle.bottom-left {
@@ -963,12 +998,14 @@ a:hover {
 
 .is-photogalery .card .mask img {
   opacity: 0;
-  transition: opacity .5s;
+  transition: transform .5s, opacity 1s;
+  transform: scale(0);
 }
 
 .is-photogalery .card:hover .mask img {
   opacity: 1;
-  transition: opacity .5s;
+  transition: transform .5s, opacity 1s;
+  transform: scale(1);
 }
 
 .is-videoreviews {
@@ -1039,7 +1076,7 @@ a:hover {
 
 .is-videoreviews .uk-slider .uk-slider-items li svg .wave {
   opacity: 1;
-  transition: opacity .5s;
+  transition: opacity .625s;
 }
 
 .is-videoreviews .uk-slider .uk-slider-items li svg .wave:nth-child(1) {
@@ -1071,7 +1108,7 @@ a:hover {
 
 .is-videoreviews .uk-slider .uk-slider-items li:hover svg .wave {
   opacity: 0;
-  transition: opacity .5s;
+  transition: opacity .625s;
 }
 
 .is-videoreviews .uk-slider .uk-slider-items li svg .round,
@@ -1102,4 +1139,53 @@ a:hover {
 .is-videoreviews .uk-slider .uk-slider-items li:hover .mask {
   background: transparent;
   transition: background .5s;
+}
+
+.is-joinus {
+  padding: 3rem 0;
+  background: url(../img/joinus_bg.png);
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  -webkit-background-size: cover !important;
+  background-size: cover !important;
+}
+
+.is-joinus .text {
+  margin-bottom: 0;
+  font-family: Rubik;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 134%;
+  text-transform: uppercase;
+}
+
+.is-joinus .text.first {
+  font-weight: 500;
+  color: #252724;
+}
+
+.is-joinus .text.second {
+  font-weight: bold;
+  color: #F9B024;
+}
+
+.is-joinus .arrow {
+  margin-right: calc(0% - 12px);
+  margin-left: calc(0% - 12px);
+}
+
+.is-joinus .btn.order {
+  padding: 1.5625rem 2rem;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #D93636;
+  border-radius: 40px;
 }
