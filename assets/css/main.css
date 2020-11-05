@@ -1238,12 +1238,10 @@ a:hover {
   padding: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
+  text-transform: none;
+  transition: all .5s;
 }
 
-.is-footer .btn.alians svg path {
+a.alians svg.alians-logo path.fill {
   fill: #84AF5A;
-}
-
-.is-footer .btn.alians:hover svg path {
-  fill: currentColor;
 }

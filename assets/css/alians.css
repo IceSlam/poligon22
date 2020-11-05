@@ -1,0 +1,78 @@
+a.alians svg.alians-logo,
+a.alians svg.alians-logo path.fill {
+  transition: fill .5s;
+}
+
+a.alians:hover svg.alians-logo,
+a.alians:hover svg.alians-logo path.fill {
+  transition: fill .5s;
+}
+
+a.alians:hover svg.alians-logo path.fill.fill-1 {
+  fill: #2B5D84
+}
+
+a.alians:hover svg.alians-logo path.fill.fill-2 {
+  fill: #D76654;
+}
+
+a.alians:hover svg.alians-logo path.fill.fill-3 {
+  fill: #D35443;
+}
+
+a.alians:hover svg.alians-logo path.fill.fill-4 {
+  fill: #7FBBEB;
+}
+
+a.alians:hover svg.alians-logo path.fill.fill-5 {
+  fill: #6290CC;
+}
+
+a.alians:hover svg.alians-logo path.fill.fill-6 {
+  fill: #5682B8;
+}
+
+a.alians:hover svg.alians-logo path.fill.fill-7 {
+  fill: #2B5D84;
+}
+
+a.alians:hover svg.alians-logo path.fill.fill-8 {
+  fill: #5D8FC8;
+}
+
+a.alians:hover svg.alians-logo path.fill.fill-9 {
+  fill: #D9715F;
+}
+
+a.alians:hover svg.alians-logo path.fill.fill-10 {
+  fill: #73ACE1;
+}
+
+a.alians:hover svg.alians-logo path.fill.fill-11 {
+  fill: #2B5D84;
+}
+
+a.alians:hover svg.alians-logo path.fill.fill-12 {
+  fill: #2B5D84;
+}
+
+a.alians:hover svg.alians-logo path.fill.fill-13,
+a.alians:hover svg.alians-logo path.fill.fill-14,
+a.alians:hover svg.alians-logo path.fill.fill-15,
+a.alians:hover svg.alians-logo path.fill.fill-16,
+a.alians:hover svg.alians-logo path.fill.fill-17,
+a.alians:hover svg.alians-logo path.fill.fill-18,
+a.alians:hover svg.alians-logo path.fill.fill-19,
+a.alians:hover svg.alians-logo path.fill.fill-20,
+a.alians:hover svg.alians-logo path.fill.fill-21,
+a.alians:hover svg.alians-logo path.fill.fill-22,
+a.alians:hover svg.alians-logo path.fill.fill-23,
+a.alians:hover svg.alians-logo path.fill.fill-24,
+a.alians:hover svg.alians-logo path.fill.fill-25,
+a.alians:hover svg.alians-logo path.fill.fill-26,
+a.alians:hover svg.alians-logo path.fill.fill-27,
+a.alians:hover svg.alians-logo path.fill.fill-28,
+a.alians:hover svg.alians-logo path.fill.fill-29,
+a.alians:hover svg.alians-logo path.fill.fill-30 {
+  fill: #6290CC;
+}
