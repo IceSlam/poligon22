@@ -18,13 +18,15 @@ a:hover {
   padding: 1.25rem 0 0;
 }
 
-.is-header .is-brand__logo {
+.is-header .is-brand__logo,
+.is-footer .is-brand__logo {
   float: left;
   margin-right: 1rem;
   margin-top: .75rem;
 }
 
-.is-header .is-brand__title {
+.is-header .is-brand__title,
+.is-footer .is-brand__title {
   font-family: Rubik;
   font-style: normal;
   font-weight: bold;
@@ -36,7 +38,8 @@ a:hover {
   margin-top: 1.25rem;
 }
 
-.is-header .is-brand__description {
+.is-header .is-brand__description,
+.is-footer .is-brand__description {
   font-family: Fira Sans;
   font-style: normal;
   font-weight: normal;
@@ -47,7 +50,8 @@ a:hover {
   margin-top: .5rem;
 }
 
-.is-header .is-header__games-counter {
+.is-header .is-header__games-counter,
+.is-footer .is-footer__games-counter {
   font-family: Rubik;
   font-style: normal;
   font-weight: bold;
@@ -59,7 +63,8 @@ a:hover {
   margin-top: 1rem;
 }
 
-.is-header .is-header__games-type {
+.is-header .is-header__games-type,
+.is-footer .is-footer__games-type {
   font-family: Rubik;
   font-style: normal;
   font-weight: normal;
@@ -70,11 +75,13 @@ a:hover {
   margin-bottom: 0;
 }
 
-.is-header .is-header__phone {
+.is-header .is-header__phone,
+.is-footer .is-footer__phone {
   margin-top: .8rem;
 }
 
-.is-header .is-header__phone .tel {
+.is-header .is-header__phone .tel,
+.is-footer .is-footer__phone .tel {
   font-family: Rubik;
   font-style: normal;
   font-weight: 500;
@@ -85,15 +92,34 @@ a:hover {
   color: #F9B024;
 }
 
-.is-header .is-header__phone .email {
+.is-header .is-header__phone .email,
+.is-footer .is-footer__phone .email {
   color: #000;
 }
 
-.is-header .is-header__socials {
+.is-footer .is-footer__phone .city {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 110%;
+  color: #252724;
+}
+
+.is-header .is-header__socials,
+.is-footer .is-footer__socials {
   margin-top: .25rem;
 }
 
-.is-header .is-header__socials .social {
+.is-footer .is-footer__socials {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.is-header .is-header__socials .social,
+.is-footer .is-footer__socials .social {
   color: #fff;
   display: inline-flex;
   width: 32px;
@@ -106,7 +132,12 @@ a:hover {
   transition: all .625s;
 }
 
-.is-header .is-header__socials .social:hover {
+.is-footer .is-footer__socials .social {
+  margin-left: .5rem;
+}
+
+.is-header .is-header__socials .social:hover,
+.is-footer .is-footer__socials .social:hover {
   background: #fff;
   color: #34A5E6;
   transition: all .625s;
@@ -134,7 +165,8 @@ a:hover {
 .is-header .is-header__games-order:hover,
 .is-endgame .is-endgame__btn:hover,
 .is-selection .view:hover,
-.is-features .btn.calculate:hover {
+.is-features .btn.calculate:hover,
+.is-joinus .btn.order:hover {
   background: #FB5050;
   transition: all .5s;
 }
@@ -1188,4 +1220,30 @@ a:hover {
   box-shadow: none;
   background: #D93636;
   border-radius: 40px;
+  transition: all .5s;
+}
+
+.is-footer {
+  padding: 3.125rem 0;
+}
+
+.is-footer .btn.alians {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 160%;
+  text-align: right;
+  color: #252724;
+  padding: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.is-footer .btn.alians svg path {
+  fill: #84AF5A;
+}
+
+.is-footer .btn.alians:hover svg path {
+  fill: currentColor;
 }
