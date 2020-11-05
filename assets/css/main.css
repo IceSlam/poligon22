@@ -253,6 +253,17 @@ a:hover {
   margin-top: 2rem;
 }
 
+.is-slider .uk-slider-items {
+  position: relative;
+}
+
+.is-slider .uk-slider-nav.uk-dotnav {
+  z-index: 2000;
+  position: absolute;
+  left: calc(0% + 800px);
+  bottom: 0%;
+}
+
 .is-endgame {
   background: #84AF5A;
   margin-left: -3px;
