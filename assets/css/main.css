@@ -1948,3 +1948,28 @@ a.alians svg.alians-logo path.fill {
   bottom: 4%;
   right: -9%;
 }
+
+/* End of Pubs page */
+
+/* Pubs item page */
+
+.is-pubs .info {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+.is-pubs .info p {
+  margin-bottom: 0;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.is-pubs .info .author::before {
+  content: '|'
+}
