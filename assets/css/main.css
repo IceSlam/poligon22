@@ -252,6 +252,7 @@ a.alians svg.alians-logo path.fill {
 .is-breadcrumbs .breadcrumb {
   margin-bottom: 0;
   background-color: transparent;
+  padding: .5rem 0;
 }
 
 .is-breadcrumbs .breadcrumb-item {
@@ -2054,3 +2055,33 @@ a.alians svg.alians-logo path.fill {
 }
 
 /* End 0f Pubs item page */
+
+/* About page */
+
+.is-main.about {}
+
+.is-main.about .is-info {
+  padding: 4.375rem 0;
+  background: url(../img/about_info_bg.jpg);
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.is-main.about .is-info h2 {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #252724;
+}
+
+.is-main.about .is-info p {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: #252724;
+}

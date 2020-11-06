@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Импульсная имитация отдачи в тагерах для лазертага - Статьи - Полигон22</title>
+  <title>О нас - Полигон22</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
   <link rel="stylesheet" href="./assets/css/mdb.min.css">
@@ -120,10 +120,10 @@
       </div>
     </nav>
   </header>
-  <main id="main" class="is-main">
+  <main id="main" class="is-main about">
 
     <section class="is-breadcrumbs">
-      <div class="container-xxl container-xl container">
+      <div class="container-xxl container-xl">
         <div class="row">
           <div class="col-lg-12">
             <nav aria-label="breadcrumb">
@@ -133,13 +133,8 @@
                     Главная
                   </a>
                 </li>
-                  <li class="breadcrumb-item">
-                    <a href="./">
-                      Статьи
-                    </a>
-                  </li>
                 <li class="breadcrumb-item active" aria-current="page">
-                  Импульсная имитация отдачи в тагерах для лазертага
+                  О нас
                 </li>
               </ol>
             </nav>
@@ -148,36 +143,20 @@
       </div>
     </section>
 
-    <section class="is-pubs container-xxl container-xl container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h2>
-            Импульсная имитация отдачи в тагерах для лазертага
-          </h2>
-          <div class="info">
-            <p class="date">
-              <i class="fas fa-clock mr-2"></i>
-              01.02.2020
+    <section class="is-info">
+      <div class="container-xxl container-xl container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>
+              О нас
+            </h2>
+            <p>
+              Лазертаг - это аналог пейнтбола, но стрельба ведётся не шариками с краской, а безопасным лазером из настоящего оружия. Это игра подходит для всех: для детей, взрослых. Играйте вместе с коллегами по работе, друзьями и родными.
             </p>
-            <p class="author ml-1">
-              <i class="fas fa-user ml-2 mr-2"></i>
-              poligon
+            <p>
+              Мы профессионально занимаемся 10 лет лазертагом, у нас 19 разнообразных площадок и 44 игровых сценария. Мы организуем для вас активный отдых по высшему разряду.
             </p>
           </div>
-        </div>
-      </div>
-      <div class="row mt-3">
-        <div class="col-lg-12 content">
-          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, perferendis, eligendi! Excepturi dolorum necessitatibus beatae dicta eveniet, dolores aperiam iure incidunt, fuga, rerum, vero harum sequi tempore non sunt minus.</div>
-          <div>Facilis natus doloremque quasi impedit, necessitatibus! Ullam laudantium porro ab fugit, voluptates nulla consectetur, natus assumenda, quasi architecto quaerat facilis. Hic quia est quasi autem, quam magni dolor expedita pariatur.</div>
-          <div>Dolorem fuga facere odio tempore illo excepturi itaque ex animi tenetur veritatis aspernatur, repudiandae eveniet impedit quisquam. Sapiente, fugiat et cupiditate, alias maiores nostrum accusantium a! Nemo, eaque alias aliquam!</div>
-          <div>Suscipit nam aliquam fugiat adipisci corporis repellendus eum, ut quis est officia amet accusamus, veritatis recusandae quam ratione ad, ipsa dolore ipsam tempora reprehenderit pariatur voluptatum? Dolorem, sit odio explicabo.</div>
-          <div>Sunt dolorum hic, nesciunt, mollitia esse natus consequatur facere dicta praesentium soluta officia voluptatem veniam quaerat commodi iste deserunt quibusdam. Atque esse eveniet numquam tenetur quod quidem eius nulla officiis.</div>
-          <div>Debitis aut, quisquam totam rem, expedita animi numquam quos cumque neque magnam dolorem! Perspiciatis cumque quisquam quaerat vero natus illum numquam iure possimus, odio? Architecto consequuntur dolores minus eius sequi.</div>
-          <div>Aspernatur, velit illo laborum cumque. Ratione, quod, commodi amet esse aspernatur facilis. Hic consectetur velit eius nesciunt mollitia, eveniet deserunt quas! Quos fuga, suscipit commodi eveniet, animi magni est dolorem.</div>
-          <div>Excepturi eius dicta voluptate totam. Rerum dolorum aperiam, iure unde assumenda vero deserunt suscipit. Earum perspiciatis officiis quis, quibusdam ex inventore repellat beatae, labore, tenetur iure eos doloremque, facilis nobis.</div>
-          <div>Odit molestiae ullam est tenetur iusto, dolorem, voluptates, id voluptatem sapiente dolores sit fugit exercitationem voluptate ea ex doloribus maiores. Ullam minima temporibus ducimus nam ipsum nobis voluptatibus fuga officiis.</div>
-          <div>Repellendus, voluptatum! Libero mollitia pariatur illo, dignissimos incidunt, consectetur corporis quia optio dicta nulla laudantium consequuntur dolores quod neque nam, molestiae aut at culpa! Velit, cum. Quae eligendi est nobis!</div>
         </div>
       </div>
     </section>
@@ -185,7 +164,7 @@
   </main>
 
   <footer class="is-footer">
-    <div class="container-xxl container-xl container">
+    <div class="container-xxl container-xl">
       <div class="row">
         <div class="col-md-6 col-lg-3">
           <a href="./" class="">
