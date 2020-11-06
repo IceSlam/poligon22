@@ -168,7 +168,8 @@ a:hover {
 .is-selection .view:hover,
 .is-features .btn.calculate:hover,
 .is-joinus .btn.order:hover,
-.is-photogalery-block .btn.order:hover {
+.is-photogalery-block .btn.order:hover,
+.is-main.about .is-weapons .btn.order:hover {
   background: #FB5050;
   transition: all .5s;
 }
@@ -2084,4 +2085,29 @@ a.alians svg.alians-logo path.fill {
   font-size: 18px;
   line-height: 150%;
   color: #252724;
+}
+
+.is-main.about .is-weapons {
+  background: url(../img/about_weapons_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.is-main.about .is-weapons .btn.order {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 1rem 2rem;
+  background: #D93636;
+  border-radius: 40px;
+  transition: background .5s;
 }
