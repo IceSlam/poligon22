@@ -282,7 +282,89 @@ a.alians svg.alians-logo path.fill {
   margin-right: .5rem;
 }
 
+a.btn:hover {
+  color: #fff !important;
+}
+
 /* End of System variables */
+
+/* Default page */
+
+.is-default {
+  padding: 4.375rem 0;
+}
+
+.is-default .content h1,
+.is-default .content h2,
+.is-default .content h3,
+.is-default .content h4,
+.is-default .content h5,
+.is-default .content h6 {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 130%;
+  color: #252724;
+}
+
+.is-default h2 {
+  font-size: 46px;
+  font-weight: bold;
+}
+
+.is-default .content img {
+  max-width: 100%;
+}
+
+.is-default .content p {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: #252724;
+}
+
+.is-default .content a {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #252724;
+  transition: color .5s;
+}
+
+.is-default .content a:hover {
+  color: #34A5E6;
+  transition: color .5s;
+}
+
+.is-default .content .btn {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #D93636;
+  border-radius: 40px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 1rem 2rem;
+  margin-top: 1.75rem;
+  transition: all .5s;
+}
+
+.is-default .content .btn:hover {
+  background: #FB5050;
+  transition: all .5s;
+}
+
+/* End of Default */
 
 /* Index page */
 
@@ -1973,3 +2055,5 @@ a.alians svg.alians-logo path.fill {
 .is-pubs .info .author::before {
   content: '|'
 }
+
+/* End 0f Pubs item page */
