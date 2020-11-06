@@ -4,3 +4,10 @@ $('[data-fancybox]').fancybox({
         showinfo : 0
     }
 });
+
+$().fancybox({
+    selector : '.certificatesGalery'
+});
+$().fancybox({
+    selector : '.otherGalery'
+});
