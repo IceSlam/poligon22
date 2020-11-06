@@ -173,7 +173,8 @@ a:hover {
 .is-main.about .is-weapons .btn.order:hover,
 .is-main.about .is-certificates .btn.request:hover,
 .is-main.about .is-partners .btn.request:hover,
-.is-main.weapons .is-weapons-list .btn.order:hover {
+.is-main.weapons .is-weapons-list .btn.order:hover,
+.is-main.platforms .is-platforms-list .btn.order:hover {
   background: #FB5050;
   transition: all .5s;
 }
@@ -632,7 +633,8 @@ a.alians svg.alians-logo path.fill {
   color: #252724;
 }
 
-.is-selection .card {
+.is-selection .card,
+.is-main.platforms .is-platforms-list .card {
   -webkit-box-shadow: none;
   box-shadow: none;
   position: relative;
@@ -640,7 +642,8 @@ a.alians svg.alians-logo path.fill {
   background-color: transparent;
 }
 
-.is-selection .card .bordered-frame {
+.is-selection .card .bordered-frame,
+.is-main.platforms .is-platforms-list  .card .bordered-frame {
   border-left: 1px dashed #F9B024 !important;
   border-top: 1px dashed #F9B024 !important;
   position: absolute;
@@ -654,7 +657,8 @@ a.alians svg.alians-logo path.fill {
   background-attachment: fixed;
 }
 
-.is-selection .card .bordered-frame-top {
+.is-selection .card .bordered-frame-top,
+.is-main.platforms .is-platforms-list .card .bordered-frame-top {
   border-bottom: 1px dashed #F9B024 !important;
   position: absolute;
   right: 2%;
@@ -666,7 +670,8 @@ a.alians svg.alians-logo path.fill {
   background-attachment: fixed;
 }
 
-.is-selection .card .bordered-frame-bottom {
+.is-selection .card .bordered-frame-bottom,
+.is-main.platforms .is-platforms-list .card .bordered-frame-bottom {
   border-bottom: 1px dashed #F9B024 !important;
   position: absolute;
   right: 1%;
@@ -677,7 +682,8 @@ a.alians svg.alians-logo path.fill {
   background-attachment: fixed;
 }
 
-.is-selection .card .bordered-frame-left {
+.is-selection .card .bordered-frame-left,
+.is-main.platforms .is-platforms-list .card .bordered-frame-left {
   border-right: 1px dashed #F9B024 !important;
   position: absolute;
   left: 0;
@@ -687,7 +693,8 @@ a.alians svg.alians-logo path.fill {
   background-attachment: fixed;
 }
 
-.is-selection .card .bordered-frame-right {
+.is-selection .card .bordered-frame-right,
+.is-main.platforms .is-platforms-list .card .bordered-frame-right {
   border-right: 1px dashed #F9B024 !important;
   position: absolute;
   right: 1%;
@@ -697,7 +704,8 @@ a.alians svg.alians-logo path.fill {
   background-attachment: fixed;
 }
 
-.is-selection .card .btn.plus {
+.is-selection .card .btn.plus,
+.is-main.platforms .is-platforms-list .card .btn.plus {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -720,19 +728,22 @@ a.alians svg.alians-logo path.fill {
   transition: all .5s;
 }
 
-.is-selection .card:hover .btn.plus {
+.is-selection .card:hover .btn.plus,
+.is-main.platforms .is-platforms-list .card:hover .btn.plus {
   background: #34A5E6;
   color: #fff;
 }
 
-.is-selection .card .img {
+.is-selection .card .img,
+.is-main.platforms .is-platforms-list .card .img {
   margin-left: -.875rem;
   margin-top: .875rem;
   overflow: hidden !important;
   max-width: 98%;
 }
 
-.is-selection .card .img .mask {
+.is-selection .card .img .mask,
+.is-main.platforms .is-platforms-list .card .img .mask {
     margin-left: -.875rem;
     max-width: 98%;
     opacity: 1;
@@ -740,16 +751,19 @@ a.alians svg.alians-logo path.fill {
     transition: background .5s;
 }
 
-.is-selection .card .img img {
+.is-selection .card .img img,
+.is-main.platforms .is-platforms-list .card .img img {
   width: 100%;
   transition: all .5s;
 }
 
-.is-selection .card:hover .img img {
+.is-selection .card:hover .img img,
+.is-main.platforms .is-platforms-list .card:hover .img img {
   transition: all .5s;
 }
 
-.is-selection .card a.title {
+.is-selection .card a.title,
+.is-main.platforms .is-platforms-list .card a.title {
   position: absolute;
   bottom: 12%;
   left: 5%;
@@ -766,7 +780,9 @@ a.alians svg.alians-logo path.fill {
 }
 
 .is-selection .card:hover a.title,
-.is-selection .card a.title:hover {
+.is-selection .card a.title:hover,
+.is-main.platforms .is-platforms-list .card:hover a.title,
+.is-main.platforms .is-platforms-list .card a.title:hover {
   color: #F9B024;
   text-decoration: underline;
   bottom: 15%;
@@ -1585,7 +1601,8 @@ a.alians svg.alians-logo path.fill {
   transition: color .5s;
 }
 
-.is-photogalery-block .btn.nav {
+.is-photogalery-block .btn.nav,
+.is-main.platforms .is-platforms-list .btn.nav {
   -webkit-box-shadow: none;
   box-shadow: none;
   background: #34A5E6;
@@ -1600,20 +1617,24 @@ a.alians svg.alians-logo path.fill {
   transition: background .5s;
 }
 
-.is-photogalery-block .btn.nav:hover {
+.is-photogalery-block .btn.nav:hover,
+.is-main.platforms .is-platforms-list .btn.nav:hover {
   transition: background .5s;
   background: #84AF5A;
 }
 
-.is-photogalery-block .btn.nav.next img {
+.is-photogalery-block .btn.nav.next img,
+.is-main.platforms .is-platforms-list .btn.nav.next img {
   transform: rotate(180deg);
 }
 
-.is-photogalery-block .pagination {
+.is-photogalery-block .pagination,
+.is-main.platforms .is-platforms-list .pagination {
   margin-top: .5rem;
 }
 
-.is-photogalery-block .pagination .page-item .page-link {
+.is-photogalery-block .pagination .page-item .page-link,
+.is-main.platforms .is-platforms-list .pagination .page-item .page-link {
   border-bottom: 2px solid #fff;
   font-family: Rubik;
   font-style: normal;
@@ -1627,7 +1648,8 @@ a.alians svg.alians-logo path.fill {
   margin: 0 .55rem;
 }
 
-.is-photogalery-block .pagination .page-item.active .page-link {
+.is-photogalery-block .pagination .page-item.active .page-link,
+.is-main.platforms .is-platforms-list .pagination .page-item.active .page-link {
   background: transparent;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -1636,13 +1658,15 @@ a.alians svg.alians-logo path.fill {
 
 }
 
-.is-photogalery-block .pagination .page-item .page-link:hover {
+.is-photogalery-block .pagination .page-item .page-link:hover,
+.is-main.platforms .is-platforms-list .pagination .page-item .page-link:hover {
   background: transparent !important;
   color: #34A5E5;
 }
 
 .is-photogalery-block .btn.get,
-.is-photogalery-block .btn.order {
+.is-photogalery-block .btn.order,
+.is-main.platforms .is-platforms-list .btn.order {
   padding: 1.25rem 2.5rem;
   background: #34A5E6;
   border-radius: 40px;
@@ -1664,7 +1688,8 @@ a.alians svg.alians-logo path.fill {
   transition: all .25s;
 }
 
-.is-photogalery-block .btn.order {
+.is-photogalery-block .btn.order,
+.is-main.platforms .is-platforms-list .btn.order {
   background: #D93636;
 }
 
@@ -2703,4 +2728,24 @@ a.alians svg.alians-logo path.fill {
 
 .is-main.weapons .is-weapons-list.item p {
   font-family: Fira Sans;
+}
+
+/* End of Weapons item page */
+
+/* Platforms page */
+
+.is-main.platforms {}
+
+.is-main.platforms .is-platforms-list {
+  padding: 4.375rem 0;
+}
+
+.is-main.platforms .is-platforms-list h2 {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #252724;
 }
