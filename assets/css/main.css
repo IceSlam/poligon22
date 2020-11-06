@@ -171,7 +171,8 @@ a:hover {
 .is-photogalery-block .btn.order:hover,
 .is-main.about .is-weapons .btn.order:hover,
 .is-main.about .is-certificates .btn.request:hover,
-.is-main.about .is-partners .btn.request:hover {
+.is-main.about .is-partners .btn.request:hover,
+.is-main.weapons .is-weapons-list .btn.order:hover {
   background: #FB5050;
   transition: all .5s;
 }
@@ -2485,4 +2486,201 @@ a.alians svg.alians-logo path.fill {
   font-size: 18px;
   line-height: 150%;
   color: #252724;
+}
+
+/* End of About page */
+
+/* Weapons page */
+
+.is-main.weapons .is-weapons-list {
+  padding: 4.375rem 0;
+}
+
+.is-main.weapons .is-weapons-list h2 {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #252724;
+}
+
+.is-main.weapons .is-weapons-list .btn.nav {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #34A5E6;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  transition: background .5s;
+}
+
+.is-main.weapons .is-weapons-list .btn.nav:hover {
+  transition: background .5s;
+  background: #84AF5A;
+}
+
+.is-main.weapons .is-weapons-list .btn.nav.next img {
+  transform: rotate(180deg);
+}
+
+.is-main.weapons .is-weapons-list .pagination {
+  margin-top: .5rem;
+}
+
+.is-main.weapons .is-weapons-list .pagination .page-item .page-link {
+  border-bottom: 2px solid #fff;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: center;
+  color: #252724;
+  padding: 0 .125rem;
+  border-radius: 0;
+  margin: 0 .55rem;
+}
+
+.is-main.weapons .is-weapons-list .pagination .page-item.active .page-link {
+  background: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #34A5E5;
+  border-bottom: 2px solid #34A5E5;
+
+}
+
+.is-main.weapons .is-weapons-list .pagination .page-item .page-link:hover {
+  background: transparent !important;
+  color: #34A5E5;
+}
+
+.is-main.weapons .is-weapons-list .btn.order {
+  padding: 1.25rem 2.5rem;
+  background: #34A5E6;
+  border-radius: 40px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #fff;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background .5s, all .25s;
+}
+
+.is-main.weapons .is-weapons-list .btn.order {
+  background: #D93636;
+}
+
+.is-main.weapons .is-weapons-list .card {
+  padding: 1.5625rem;
+  border: 1px dashed #D9DDD5;
+  box-sizing: border-box;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0px;
+  position: relative;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.is-main.weapons .is-weapons-list .card:hover {
+  background: #F6F9F3;
+  transition: all .5s;
+}
+
+.is-main.weapons .is-weapons-list .card .btn.plus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  bottom: -6px;
+  left: -5.5px;
+}
+
+.is-main.weapons .is-weapons-list .card .img-block {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  width: 100%;
+  min-height: 250px;
+  max-height: 250px;
+  background: #F6F9F3;
+  justify-content: center;
+  align-items: center;
+  transition: background .5s;
+}
+
+.is-main.weapons .is-weapons-list .card:hover .img-block {
+  background: #fff;
+  transition: background .5s;
+}
+
+.is-main.weapons .is-weapons-list .card .img-block img {
+  max-width: 75%;
+}
+
+.is-main.weapons .is-weapons-list .card .title {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #252724;
+  margin-top: 1.5625rem;
+  transition: all .5s;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+}
+
+.is-main.weapons .is-weapons-list .card .title::before {
+  content: '+';
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  width: 0;
+  height: 25px;
+  border-radius: 50%;
+  background: #34A5E6;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  float: left;
+  transition: all .5s;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  font-weight: 200;
+  padding-bottom: 2px;
+}
+
+.is-main.weapons .is-weapons-list .card:hover .title::before {
+  width: 25px;
+  margin-right: .625rem;
+  transition: all .5s;
+  opacity: 1;
+}
+
+.is-main.weapons .is-weapons-list .card:hover .title {
+  color: #34A5E6;
+  transition: all .5s;
 }
