@@ -170,7 +170,8 @@ a:hover {
 .is-joinus .btn.order:hover,
 .is-photogalery-block .btn.order:hover,
 .is-main.about .is-weapons .btn.order:hover,
-.is-main.about .is-certificates .btn.request:hover {
+.is-main.about .is-certificates .btn.request:hover,
+.is-main.about .is-partners .btn.request:hover {
   background: #FB5050;
   transition: all .5s;
 }
@@ -2097,7 +2098,8 @@ a.alians svg.alians-logo path.fill {
 }
 
 .is-main.about .is-weapons .btn.order,
-.is-main.about .is-certificates .btn.request {
+.is-main.about .is-certificates .btn.request,
+.is-main.about .is-partners .btn.request {
   -webkit-box-shadow: none;
   box-shadow: none;
   font-family: Rubik;
@@ -2462,4 +2464,25 @@ a.alians svg.alians-logo path.fill {
 .is-main.about .is-partners .uk-slider .uk-slider-items li:hover .mask {
   background: transparent;
   transition: background .5s;
+}
+
+.is-main.about .is-partners .uk-panel img {
+  filter: saturate(0%);
+  opacity: .3;
+  transition: filter .5s, opacity .5s;
+}
+
+.is-main.about .is-partners .uk-panel:hover img {
+  filter: saturate(100%);
+  opacity: 1;
+  transition: filter .5s, opacity .5s;
+}
+
+.is-main.about .is-partners .content p {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: #252724;
 }
