@@ -1,0 +1,143 @@
+@media screen and (max-width:575px) {
+
+  .is-header .is-header__games-counter,
+  .is-footer .is-footer__games-counter,
+  .is-header .is-header__games-type,
+  .is-footer .is-footer__games-type,
+  .is-header .is-header__phone,
+  .is-footer .is-footer__phone {
+    text-align: center;
+  }
+
+  .is-header .is-brand__title,
+  .is-footer .is-brand__title {
+    margin-top: 2rem;
+  }
+
+  .is-footer {
+    padding: 0 0 .5rem !important;
+  }
+
+  .is-header .is-header__socials,
+  .is-footer .is-footer__socials {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+  }
+
+  .is-endgame .is-endgame__outer {
+    display: none;
+  }
+
+  .is-slider .uk-slider-nav.uk-dotnav {
+    display: none;
+  }
+
+  .is-photogalery {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .is-selection .row.mt-5 {
+    padding-left: 1rem;
+  }
+
+  .is-selection .view-block {
+    margin-bottom: 1rem;
+  }
+
+  .is-weapons .btn.view,
+  .is-photogalery .btn.view {
+    text-align: center !important;
+  }
+
+  .is-features .content {
+    padding-left: 1rem;
+  }
+
+  .is-features .line img {
+    box-shadow: none;
+  }
+
+  .is-features .btn.calculate {
+    display: block;
+  }
+
+  .is-videoreviews .uk-position-relative.uk-light.uk-slider.uk-slider-container {
+    padding-top: 5rem !important;
+  }
+
+  .is-videoreviews .title-block {
+    margin-bottom: 0 !important;
+  }
+
+  .is-joinus .arrows-block {
+    margin-top: 2rem;
+    transform: rotate(90deg);
+    margin-bottom: 3rem;
+  }
+
+  .is-footer .btn.alians {
+    text-align: center !important;
+    margin-top: 1.5rem !important;
+  }
+
+  .is-endgame .is-endgame__inner {
+    padding-left: .5rem !important;
+    padding-bottom: 2rem;
+  }
+
+  .is-endgame .is-endgame__inner-content p {
+    padding-left: 1rem;
+  }
+
+  .is-why {
+    overflow: hidden;
+    background: none !important;
+  }
+
+  .is-main.about .is-info {
+    background: none !important;
+  }
+
+  .is-main.about .is-weapons .row.mt-5,
+  .is-default,
+  .is-photogalery-item,
+  .is-photogalery-block,
+  .is-main.about .is-partners,
+  .is-photogalery-block .galery-items,
+  .is-main.platforms .is-platforms-list,
+  .is-main.platforms .is-platforms-list .platform-items,
+  .is-main.players .players-list,
+  .is-pubs,
+  .is-main.weapons .is-weapons-list,
+  .is-main.weapons .is-weapons-list .weapon-items
+   {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .is-main.about .is-partners .title-block {
+    margin-bottom: 0 !important;
+  }
+
+  .is-main.about .is-partners .uk-slider {
+    padding-top: 5rem !important;
+  }
+
+  .is-main.about .is-certificates .title-block {
+    margin-bottom: 0rem !important;
+  }
+
+  .is-main.about .is-certificates .uk-slider {
+    padding-top: 5rem !important;
+  }
+
+  .is-pubs .card .bordered-frame-bottom,
+  .is-pubs .card .bordered-frame-right {
+    right: 4%;
+  }
+
+}
