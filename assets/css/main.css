@@ -1719,7 +1719,8 @@ a.alians svg.alians-logo path.fill {
   text-transform: uppercase;
 }
 
-.is-photogalery-item .card {
+.is-photogalery-item .card,
+.is-main.platforms .is-platforms-list.item .card {
   -webkit-box-shadow: none;
   box-shadow: none;
   cursor: pointer;
@@ -1733,15 +1734,18 @@ a.alians svg.alians-logo path.fill {
   overflow: hidden;
 }
 
-.is-photogalery-item .card.long {
+.is-photogalery-item .card.long,
+.is-main.platforms .is-platforms-list.item .card.long {
   min-height: 470px;
 }
 
-.is-photogalery-item .card.short {
+.is-photogalery-item .card.short,
+.is-main.platforms .is-platforms-list.item .card.short {
   min-height: 220px;
 }
 
-.is-photogalery-item .card .mask {
+.is-photogalery-item .card .mask,
+.is-main.platforms .is-platforms-list.item .card .mask {
   transition: background .625s;
   display: -webkit-flex;
   display: -ms-flex;
@@ -1750,7 +1754,8 @@ a.alians svg.alians-logo path.fill {
   align-items: center;
 }
 
-.is-photogalery-item .card:hover .mask {
+.is-photogalery-item .card:hover .mask,
+.is-main.platforms .is-platforms-list.item .card:hover .mask {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1765,7 +1770,8 @@ a.alians svg.alians-logo path.fill {
   align-items: center;
 }
 
-.is-photogalery-item .card .mask .angle {
+.is-photogalery-item .card .mask .angle,
+.is-main.platforms .is-platforms-list.item .card .mask .angle {
   opacity: 0;
   transform: scale(0);
   transition:
@@ -1776,7 +1782,8 @@ a.alians svg.alians-logo path.fill {
       right .5s;
 }
 
-.is-photogalery-item .card:hover .mask .angle {
+.is-photogalery-item .card:hover .mask .angle,
+.is-main.platforms .is-platforms-list.item .card:hover .mask .angle {
   opacity: 1;
   display: block;
   width: 20px;
@@ -1792,61 +1799,71 @@ a.alians svg.alians-logo path.fill {
       right .5s;
 }
 
-.is-photogalery-item .card .mask .angle.top-left {
+.is-photogalery-item .card .mask .angle.top-left,
+.is-main.platforms .is-platforms-list.item .card .mask .angle.top-left {
   top: -10px;
   left: -10px;
 }
 
-.is-photogalery-item .card:hover .mask .angle.top-left {
+.is-photogalery-item .card:hover .mask .angle.top-left,
+.is-main.platforms .is-platforms-list.item .card:hover .mask .angle.top-left {
   left: 10px;
   top: 10px;
   border-right: 0px;
   border-bottom: 0px;
 }
 
-.is-photogalery-item .card .mask .angle.top-right {
+.is-photogalery-item .card .mask .angle.top-right,
+.is-main.platforms .is-platforms-list.item .card .mask .angle.top-right {
   right: -10px;
   top: -10px;
 }
 
-.is-photogalery-item .card:hover .mask .angle.top-right {
+.is-photogalery-item .card:hover .mask .angle.top-right,
+.is-main.platforms .is-platforms-list.item .card:hover .mask .angle.top-right {
   right: 10px;
   top: 10px;
   border-left: 0px;
   border-bottom: 0px;
 }
 
-.is-photogalery-item .card .mask .angle.bottom-right {
+.is-photogalery-item .card .mask .angle.bottom-right,
+.is-main.platforms .is-platforms-list.item .card .mask .angle.bottom-right {
   right: -10px;
   bottom: -10px;
 }
 
-.is-photogalery-item .card:hover .mask .angle.bottom-right {
+.is-photogalery-item .card:hover .mask .angle.bottom-right,
+.is-main.platforms .is-platforms-list.item .card:hover .mask .angle.bottom-right {
   right: 10px;
   bottom: 10px;
   border-left: 0px;
   border-top: 0px;
 }
 
-.is-photogalery-item .card .mask .angle.bottom-left {
+.is-photogalery-item .card .mask .angle.bottom-left,
+.is-main.platforms .is-platforms-list.item .card .mask .angle.bottom-left {
   left: -10px;
   bottom: -10px;
 }
 
-.is-photogalery-item .card:hover .mask .angle.bottom-left {
+.is-photogalery-item .card:hover .mask .angle.bottom-left,
+.is-main.platforms .is-platforms-list.item .card:hover .mask .angle.bottom-left {
   left: 10px;
   bottom: 10px;
   border-right: 0px;
   border-top: 0px;
 }
 
-.is-photogalery-item .card .mask img {
+.is-photogalery-item .card .mask img,
+.is-main.platforms .is-platforms-list.item .card .mask img {
   opacity: 0;
   transition: transform .5s, opacity 1s;
   transform: scale(0);
 }
 
-.is-photogalery-item .card:hover .mask img {
+.is-photogalery-item .card:hover .mask img,
+.is-main.platforms .is-platforms-list.item .card:hover .mask img {
   opacity: 1;
   transition: transform .5s, opacity 1s;
   transform: scale(1);
@@ -2715,18 +2732,21 @@ a.alians svg.alians-logo path.fill {
 
 /* Weapons Item page */
 
-.is-main.weapons .is-weapons-list.item h2 {
+.is-main.weapons .is-weapons-list.item h2,
+.is-main.platforms .is-platforms-list.item h2 {
   margin-top: 0;
 }
 
-.is-main.weapons .is-weapons-list.item h3 {
+.is-main.weapons .is-weapons-list.item h3,
+.is-main.platforms .is-platforms-list.item h3 {
   text-transform: uppercase;
   font-weight: 200;
   margin-bottom: 0;
   font-family: Rubik;
 }
 
-.is-main.weapons .is-weapons-list.item p {
+.is-main.weapons .is-weapons-list.item p,
+.is-main.platforms .is-platforms-list.item p {
   font-family: Fira Sans;
 }
 
@@ -2749,3 +2769,7 @@ a.alians svg.alians-logo path.fill {
   text-transform: uppercase;
   color: #252724;
 }
+
+/* End of Platforms page */
+
+/* Platforms item page */
