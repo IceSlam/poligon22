@@ -2773,3 +2773,7 @@ a.alians svg.alians-logo path.fill {
 /* End of Platforms page */
 
 /* Players page */
+
+.is-main.players .card:hover .title {
+  bottom: 12%;
+}
