@@ -243,6 +243,35 @@ get_header();
       </div>
     </section>
 
+		<section class="is-features">
+      <div class="wrapper container-fluid">
+        <div class="row">
+          <div class="col-lg-6 bg" style="background: url(<? echo get_template_directory_uri() . '/assets/img/features_img_bg.jpg' ?>)">
+          </div>
+          <div class="col-lg-6 content">
+						<?php while ( have_rows('index_features') ) : the_row(); ?>
+							<div class="line">
+	              <img src="<? the_sub_field('icon'); ?>" alt="<? the_sub_field('title'); ?>">
+	              <div class="text-wrap">
+	                <div class="text">
+	                  <p class="main">
+	                    <? the_sub_field('title'); ?>
+	                  </p>
+										<p class="sub">
+											<? the_sub_field('subtitle'); ?>
+										</p>
+	                </div>
+	              </div>
+	            </div>
+						<?php endwhile; ?>
+            <a href="#" class="btn calculate">
+              Рассчитать стоимость
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
 <?php
 get_footer();
