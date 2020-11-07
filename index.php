@@ -61,6 +61,48 @@ get_header();
 			</div>
 		</section>
 
+		<section class="is-endgame container-fluid">
+      <div class="row">
+        <div class="col-lg-3 is-endgame__outer">
+          <img src="<? echo get_template_directory_uri() . "/assets/img/endgame_outer_bg.png" ?>" alt="" class="img-fluid d-block" style="margin-left: calc(100% - 123px);">
+        </div>
+        <div class="col-lg-9 is-endgame__inner">
+          <img src="<? echo get_template_directory_uri() . "/assets/img/endgame_inner_bg.png" ?>" alt="" class="img-fluid d-block img">
+          <div class="is-endgame__inner-content">
+            <p>
+              У вас прошла игра?
+            </p>
+            <p>
+              Хотите получить фотографии?
+            </p>
+          </div>
+          <a href="#" class="btn is-endgame__btn">
+            Получить фотографии
+          </a>
+        </div>
+      </div>
+    </section>
+
+		<section class="is-why" style="background: url(<? echo get_template_directory_uri() . '/assets/img/why_bg.jpg' ?>);">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <h3>
+              <? the_field('why_title'); ?>
+              <span>
+                <? the_field('why_title_color'); ?>
+              </span>
+            </h3>
+            <? the_field('why_description'); ?>
+            <div class="verticaline"></div>
+            <div class="verticaline v2"></div>
+          </div>
+          <div class="col-lg-5">
+          </div>
+        </div>
+      </div>
+    </section>
+
 
 <?php
 get_footer();
