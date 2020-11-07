@@ -272,6 +272,61 @@ get_header();
       </div>
     </section>
 
+		<section class="is-photogalery container-xxl container-xl container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2>
+            Фотогалерея
+          </h2>
+        </div>
+        <div class="col-lg-6">
+          <a href="<? echo get_category_link(2); ?>" class="btn view btn-block text-right">
+            <img src="<? echo get_template_directory_uri() . '/assets/img/weapons_view.svg' ?>" alt="">
+            <span>
+              Смотреть все фотографии
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="row mt-5">
+			<div class="col-lg-3">
+					<div data-fancybox="image" href="<? the_field('index_photo_left'); ?>" class="card long" style="background: url(<? the_field('index_photo_left'); ?>);">
+						<div class="mask">
+							<div class="angle top-left"></div>
+							<div class="angle top-right"></div>
+							<div class="angle bottom-left"></div>
+							<div class="angle bottom-right"></div>
+							<img src="<? echo get_template_directory_uri() . '/assets/img/photogalery_aim.svg' ?>" alt="">
+						</div>
+					</div>
+				</div>
+        <div class="col-lg-6">
+					<?php while ( have_rows('index_photos_center') ) : the_row(); ?>
+						<div data-fancybox="image" href="<? the_sub_field('photo'); ?>" class="card short" style="background: url(<? the_sub_field('photo'); ?>);float:left;margin:0 .5rem 1rem;max-width:47.5%;width:100%;min-height:227px">
+	            <div class="mask">
+	              <div class="angle top-left"></div>
+	              <div class="angle top-right"></div>
+	              <div class="angle bottom-left"></div>
+	              <div class="angle bottom-right"></div>
+	              <img src="<? echo get_template_directory_uri() . '/assets/img/photogalery_aim.svg' ?>" alt="">
+	            </div>
+	          </div>
+					<?php endwhile; ?>
+        </div>
+        <div class="col-lg-3">
+          <div data-fancybox="image" href="<? the_field('index_photo_right'); ?>" class="card long" style="background: url(<? the_field('index_photo_right'); ?>);">
+            <div class="mask">
+              <div class="angle top-left"></div>
+              <div class="angle top-right"></div>
+              <div class="angle bottom-left"></div>
+              <div class="angle bottom-right"></div>
+              <img src="<? echo get_template_directory_uri() . '/assets/img/photogalery_aim.svg' ?>" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
 <?php
 get_footer();
