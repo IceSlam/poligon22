@@ -14,6 +14,17 @@
     margin-top: 2rem;
   }
 
+  .is-header .brand a,
+  .is-footer .brand a {
+    justify-content: center;
+  }
+
+  .is-header .brand a .is-brand,
+  .is-footer .brand a .is-brand {
+    max-width: 40%;
+    text-align: center;
+  }
+
   .is-footer {
     padding: 0 0 .5rem !important;
   }
@@ -156,6 +167,9 @@
       display: -ms-flex;
       display: flex;
       justify-content: center;
+    }
+
+    .is-header .is-brand {
     }
 
     .is-header .is-header__socials,

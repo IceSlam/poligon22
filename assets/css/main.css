@@ -26,6 +26,13 @@ a:hover {
   margin-top: .75rem;
 }
 
+.is-header .brand a,
+.is-footer .brand a {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
 .is-header .is-brand__title,
 .is-footer .is-brand__title {
   font-family: Rubik;

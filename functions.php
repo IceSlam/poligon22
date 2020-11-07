@@ -141,13 +141,14 @@ add_action( 'widgets_init', 'poligon22_widgets_init' );
  */
 function poligon22_scripts() {
 	wp_enqueue_style( 'poligon22-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_enqueue_style( 'Rubik-FiraSans-fonts', 'https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' );
+	wp_enqueue_style( 'Rubik-font', 'https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' );
+	wp_enqueue_style( 'FiraSans-font', 'https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' );
 	wp_enqueue_style( 'FontAwesome', 'https://use.fontawesome.com/releases/v5.15.1/css/all.css', array(), 5.15);
 	wp_enqueue_style( 'MDBootstrap-style', get_template_directory_uri() . '/assets/css/mdb.min.css', array(), 5.1 );
 	wp_enqueue_style( 'FancyBox-style', get_template_directory_uri() . '/assets/css/jquery.fancybox.min.css', array(), 3.5 );
 	wp_enqueue_style( 'UIKit-style', get_template_directory_uri() . '/assets/css/uikit.min.css', array(), 3.5 );
-	wp_enqueue_style( 'Main-style', get_template_directory_uri() . '/assets/css/main.min.css', array(), _S_VERSION );
-	wp_enqueue_style( 'Media-style', get_template_directory_uri() . '/assets/css/media.min.css', array(), _S_VERSION );
+	wp_enqueue_style( 'Main-style', get_template_directory_uri() . '/assets/css/main.css', array(), _S_VERSION );
+	wp_enqueue_style( 'Media-style', get_template_directory_uri() . '/assets/css/media.css', array(), _S_VERSION );
 	wp_enqueue_style( 'AliansLogo-style', get_template_directory_uri() . '/assets/css/alians.min.css', array(), _S_VERSION );
 	wp_style_add_data( 'poligon22-style', 'rtl', 'replace' );
 
