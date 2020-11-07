@@ -18,7 +18,7 @@ WordPress-тема оформления сайта компании Полиго
 ##### Информация о разработчике
 
 * Разработчик: [IceSlam](https://iceslam.ru/ "IceSlam")
-* Компания-разработчик: [ИА Альянс+](https;//alianscompany.ru "Интернет-агентство Альянс+")
+* Компания-разработчик: [ИА Альянс+](https://alianscompany.ru "Интернет-агентство Альянс+")
 * Версия: 2.0
 * Инструменты: Bootstrap 5 Alpha, Material Design UI Kit 2.0, UIKit 3, FancyBox 3, FontAwesome 5, jQuery 3.5
 
