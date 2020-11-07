@@ -361,3 +361,50 @@
     display: none;
   }
 }
+
+@media screen and (min-width:1200px) and (max-width:1399px) {
+
+  .is-header .is-header__games-counter,
+  .is-footer .is-footer__games-counter {
+    line-height: 120%;
+    font-size: 22px;
+    margin-top: 2rem;
+  }
+
+  .is-header .is-header__games-type,
+  .is-footer .is-footer__games-type {
+    line-height: 120%;
+    font-size: 20px;
+  }
+
+  .is-header .col-md-6.offset-lg-1.col-lg-2 {
+    margin-left: 0;
+  }
+
+  .is-header .is-header__games-order {
+    display: block;
+    width: 150%;
+  }
+
+  .is-why {
+    -webkit-background-size: 40% !important;
+    background-size: 40% !important;
+  }
+
+  .is-endgame .is-endgame__btn {
+    margin-top: 2rem;
+  }
+
+  .is-endgame .is-endgame__inner {
+    padding-bottom: 2rem;
+  }
+
+  .is-why .col-lg-7 .verticaline.v2 {
+    right: calc(0% - 130px);
+  }
+
+  .is-pubs .card .bordered-frame-right,
+  .is-pubs .card .bordered-frame-bottom {
+    right: -3%;
+  }
+}
