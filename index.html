@@ -70,7 +70,12 @@
           </div>
         </div>
         <div class="col-md-6 offset-lg-1 col-lg-2">
-          <a href="#" class="btn is-header__games-order">
+          <a
+            class="btn is-header__games-order"
+            type="button"
+            data-toggle="modal"
+            data-target="#order-game"
+          >
             Заказать игру
           </a>
         </div>
@@ -852,6 +857,68 @@
         </div>
       </div>
     </footer>
+
+    <div class="is-modals">
+      <div
+        class="modal fade order-game"
+        id="order-game"
+        tabindex="-1"
+        aria-labelledby="order-game-label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="order-game-name" class="form-label">
+                  Ваше имя*
+                </label>
+                <input type="text" class="form-control" id="order-game-name" aria-describedby="order-game-name-help" required>
+                <div id="order-game-name-help" class="form-text">
+                  * Обязательно для заполнения
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="order-game-email" class="form-label">
+                  Ваше email*
+                </label>
+                <input type="email" class="form-control" id="order-game-email" aria-describedby="order-game-email-help" required>
+                <div id="order-game-email-help" class="form-text">
+                  * Обязательно для заполнения
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="order-game-tel" class="form-label">
+                  Телефон
+                </label>
+                <input type="tel" class="form-control" id="order-game-tel" aria-describedby="order-game-tel-help" required>
+              </div>
+              <div class="mb-3">
+                <label for="order-game-tel" class="form-label">
+                  Сообщение
+                </label>
+                <textarea type="textarea" class="form-control" id="order-game-tel" aria-describedby="order-game-tel-help" required></textarea>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="order-game-accept" required>
+                <label class="form-check-label" for="order-game-acept">
+                  Нажимая кнопку "Заказать" Вы даёте свое согласие на обработку персональных данных
+                </label>
+              </div>
+              <button type="submit" class="btn d-block modal-submit">Заказать</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   <!-- SCRIPTS -->
   <script src="./assets/js/jquery.3.5.1.min.js"></script>

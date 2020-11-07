@@ -174,9 +174,13 @@ a:hover {
 .is-main.about .is-certificates .btn.request:hover,
 .is-main.about .is-partners .btn.request:hover,
 .is-main.weapons .is-weapons-list .btn.order:hover,
-.is-main.platforms .is-platforms-list .btn.order:hover {
+.is-main.platforms .is-platforms-list .btn.order:hover,
+.modal-submit:hover {
   background: #FB5050;
   transition: all .5s;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #fff;
 }
 
 .is-header .is-navbar {
@@ -289,6 +293,35 @@ a.alians svg.alians-logo path.fill {
   margin-right: .5rem;
 }
 
+.modal-dialog {
+  max-width: 650px;
+}
+
+.modal-content {
+  padding: 1rem;
+  border-radius: 0;
+}
+
+.modal-header {
+  border: none !important;
+}
+
+.form-label {
+  font-family: Rubik;
+  color: #252724;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+.form-control {
+  border-radius: 0 !important;
+  background: #FBFBFB;
+  height: 3rem;
+}
+
+textarea.form-control {
+  height: 7rem;
+}
 /* End of System variables */
 
 /* Default page */
@@ -422,6 +455,7 @@ a.alians svg.alians-logo path.fill {
   position: absolute;
   left: calc(0% + 800px);
   bottom: 0%;
+  display: none;
 }
 
 .is-endgame {
@@ -829,7 +863,8 @@ a.alians svg.alians-logo path.fill {
   transition: all .5s;
 }
 
-.is-selection .view {
+.is-selection .view,
+.modal-submit {
   -webkit-box-shadow: none;
   box-shadow: none;
   width: 100%;
