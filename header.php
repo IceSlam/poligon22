@@ -29,7 +29,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-lg-3 brand">
-          <a href="./" class="">
+          <a href="<?php echo get_home_url(); ?>" class="">
           <img src="<?php echo get_template_directory_uri() . "/assets/img/poligon_logo.png" ?>" alt="Полигон22" class="img-fluid is-brand__logo">
           <div class="is-brand">
             <h1 class="is-brand__title">
@@ -126,38 +126,28 @@
           class="navbar-toggler"
           type="button"
           data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-target="#poligon22-menu"
+          aria-controls="poligon22-menu"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <i class="fas fa-bars"></i>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">
-                О нас
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Фотогалерея игр</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Лучшие игроки</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Статьи</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Оружие</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </div>
+				<?
+              wp_nav_menu( array(
+                  'theme_location'  => '',
+                  'depth'           => 2, // 1 = no dropdowns, 2 = with dropdowns.
+                  'container'       => 'div',
+                  'container_class' => 'collapse navbar-collapse',
+                  'container_id'    => 'poligon22-menu',
+                  'menu_class'      => 'navbar-nav mb-2 mb-lg-0',
+                  'menu_id'         => 'poligonMenuList',
+                  'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+                  'walker'          => new WP_Bootstrap_Navwalker(),
+              ) );
+            ?>
+
       </div>
     </nav>
   </header>

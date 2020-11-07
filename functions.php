@@ -53,8 +53,7 @@ if ( ! function_exists( 'poligon22_setup' ) ) :
 
 				register_nav_menus(
 					array(
-						' headerMenu ' => esc_html__( 'Шапка', 'poligon22' ),
-						' footerMenu ' => esc_html__( 'Подвал', 'poligon22' ),
+						' headerMenu ' => esc_html__( 'Шапка', 'poligon22' )
 					)
 				);
 
