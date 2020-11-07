@@ -2097,6 +2097,16 @@ a.alians svg.alians-logo path.fill {
   font-weight: 200;
 }
 
+.is-pubs h2,
+.is-pubs h3 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.is-pubs h3 {
+  text-transform: uppercase;
+}
+
 .is-pubs .info .author::before {
   content: '|'
 }

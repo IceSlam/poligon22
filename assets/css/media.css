@@ -65,7 +65,7 @@
     display: block;
   }
 
-  .is-videoreviews .uk-position-relative.uk-light.uk-slider.uk-slider-container {
+  .is-videoreviews .uk-slider {
     padding-top: 5rem !important;
   }
 
@@ -119,16 +119,13 @@
     padding-right: 1rem;
   }
 
-  .is-main.about .is-partners .title-block {
+  .is-main.about .is-partners .title-block,
+  .is-main.about .is-certificates .title-block {
     margin-bottom: 0 !important;
   }
 
   .is-main.about .is-partners .uk-slider {
     padding-top: 5rem !important;
-  }
-
-  .is-main.about .is-certificates .title-block {
-    margin-bottom: 0rem !important;
   }
 
   .is-main.about .is-certificates .uk-slider {
@@ -140,4 +137,109 @@
     right: 4%;
   }
 
+}
+
+@media screen and (min-width:576px) and (max-width:767px) {
+
+    .is-header .is-header__games-counter,
+    .is-footer .is-footer__games-counter,
+    .is-header .is-header__games-type,
+    .is-footer .is-footer__games-type,
+    .is-header .is-header__phone,
+    .is-footer .is-footer__phone {
+      text-align: center;
+    }
+
+    .is-header .brand,
+    .is-footer .brand {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: center;
+    }
+
+    .is-header .is-header__socials,
+    .is-footer .is-footer__socials {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 1rem;
+    }
+
+    .is-footer .btn.alians {
+      text-align: center !important;
+      margin-top: 1.5rem !important;
+    }
+
+    .is-footer {
+      padding: 0 0 .5rem !important;
+    }
+
+    .is-joinus .arrows-block {
+      margin-top: 2rem;
+      transform: rotate(90deg);
+      margin-bottom: 3rem;
+    }
+
+    .is-endgame .is-endgame__outer {
+      display: none;
+    }
+
+    .is-endgame .is-endgame__inner {
+      padding-left: .5rem !important;
+      padding-bottom: 2rem;
+    }
+
+    .is-endgame .is-endgame__inner-content p {
+      padding-left: 1rem;
+    }
+
+    .is-slider .uk-slider-nav.uk-dotnav {
+      display: none;
+    }
+
+    .is-main.about .is-weapons .row.mt-5,
+    .is-default,
+    .is-photogalery-item,
+    .is-photogalery-block,
+    .is-main.about .is-partners,
+    .is-photogalery-block .galery-items,
+    .is-main.platforms .is-platforms-list,
+    .is-main.platforms .is-platforms-list .platform-items,
+    .is-main.players .players-list,
+    .is-pubs,
+    .is-main.weapons .is-weapons-list,
+    .is-main.weapons .is-weapons-list .weapon-items
+     {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .is-why {
+      background: none !important;
+    }
+
+    .is-main.about .is-info {
+      background: none !important;
+    }
+
+    .is-main.about .is-partners .title-block,
+    .is-main.about .is-certificates .title-block {
+      margin-bottom: 0 !important;
+    }
+
+    .is-weapons .btn.view,
+    .is-photogalery .btn.view {
+      text-align: center !important;
+    }
+
+    .is-selection .view-block {
+      margin-bottom: 1rem;
+    }
+
+    .is-pubs .card .bordered-frame-bottom,
+    .is-pubs .card .bordered-frame-right {
+      right: -2%;
+    }
 }
