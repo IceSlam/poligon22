@@ -281,3 +281,83 @@
     background: none !important;
   }
 }
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+  .is-header .is-brand__title,
+  .is-footer .is-brand__title {
+    font-size: 16px;
+  }
+
+  .is-header .is-brand__description,
+  .is-footer .is-brand__description {
+    font-size: 12px;
+  }
+
+  .is-header .is-header__games-counter,
+  .is-footer .is-footer__games-counter {
+    line-height: 120%;
+    font-size: 22px;
+  }
+
+  .is-header .is-header__games-type,
+  .is-footer .is-footer__games-type {
+    line-height: 120%;
+    font-size: 20px;
+  }
+
+  .is-header .is-header__phone .tel,
+  .is-footer .is-footer__phone .tel {
+    line-height: 100%;
+    font-size: 18px;
+  }
+
+  .is-header .col-md-6.offset-lg-1.col-lg-2 {
+    margin-left: 0;
+  }
+
+  .is-header .is-header__games-order {
+    display: block;
+    width: 150%;
+  }
+
+  .is-header .is-navbar .navbar-nav .nav-item {
+    margin-right: 0;
+  }
+
+  .is-slider .is-slider__slide-content .col-lg-7 {
+    width: 75%;
+  }
+
+  .is-endgame .is-endgame__btn {
+    margin-top: 2rem;
+  }
+
+  .is-endgame .is-endgame__inner {
+    padding-bottom: 2rem;
+  }
+
+  .is-why {
+    background: none !important;
+  }
+
+  .is-why .col-lg-7 .verticaline.v2 {
+    right: calc(0% - 300px);
+  }
+
+  .is-selection .variants p.first {
+    padding-top: 0;
+  }
+
+  .is-features .line img {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+  }
+
+  .is-main.about .is-info {
+    background: none !important;
+  }
+
+  .is-pubs .card .bordered-frame-right {
+    display: none;
+  }
+}
