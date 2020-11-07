@@ -48,11 +48,15 @@ if ( ! function_exists( 'poligon22_setup' ) ) :
 		add_theme_support( 'post-thumbnails' );
 
 		// This theme uses wp_nav_menu() in one location.
-		register_nav_menus(
-			array(
-				'menu-1' => esc_html__( 'Primary', 'poligon22' ),
-			)
-		);
+
+				add_theme_support('menus');
+
+				register_nav_menus(
+					array(
+						' headerMenu ' => esc_html__( 'Шапка', 'poligon22' ),
+						' footerMenu ' => esc_html__( 'Подвал', 'poligon22' ),
+					)
+				);
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
@@ -99,7 +103,9 @@ if ( ! function_exists( 'poligon22_setup' ) ) :
 				'flex-width'  => true,
 				'flex-height' => true,
 			)
+
 		);
+
 	}
 endif;
 add_action( 'after_setup_theme', 'poligon22_setup' );
@@ -235,3 +241,151 @@ return new WP_Error( 'class-wp-bootstrap-navwalker-missing', __( 'It appears the
     // File exists... require it.
     require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 }
+
+function mytheme_customize_register( $wp_customize ) {
+
+$wp_customize->add_section(
+
+    'data_site_section',
+
+    array(
+        'title' => 'Контактная информация',
+        'capability' => 'edit_theme_options',
+        'description' => "Контактная информация компании"
+    )
+);
+
+$wp_customize->add_setting(
+
+    'poligon22_vk',
+
+    array(
+        'default' => '',
+        'type' => 'option'
+    )
+);
+$wp_customize->add_control(
+
+    'poligon22_vk_control',
+
+    array(
+        'type' => 'text',
+        'label' => "ВКонтакте",
+        'section' => 'data_site_section',
+
+        'settings' => 'poligon22_vk'
+    )
+);
+
+$wp_customize->add_setting(
+
+    'poligon22_youtube',
+
+    array(
+        'default' => '',
+        'type' => 'option'
+    )
+);
+$wp_customize->add_control(
+
+    'poligon22_youtube_control',
+
+    array(
+        'type' => 'text',
+        'label' => "YouTube",
+        'section' => 'data_site_section',
+
+        'settings' => 'poligon22_youtube'
+    )
+);
+
+$wp_customize->add_setting(
+
+    'poligon22_ok',
+
+    array(
+        'default' => '',
+        'type' => 'option'
+    )
+);
+$wp_customize->add_control(
+
+    'poligon22_ok_control',
+
+    array(
+        'type' => 'text',
+        'label' => "Одноклассники",
+        'section' => 'data_site_section',
+
+        'settings' => 'poligon22_ok'
+    )
+);
+
+$wp_customize->add_setting(
+
+    'poligon22_instagram',
+
+    array(
+        'default' => '',
+        'type' => 'option'
+    )
+);
+$wp_customize->add_control(
+
+    'poligon22_instagram_control',
+
+    array(
+        'type' => 'text',
+        'label' => "Instagram",
+        'section' => 'data_site_section',
+
+        'settings' => 'poligon22_instagram'
+    )
+);
+
+$wp_customize->add_setting(
+
+    'poligon22_email',
+
+    array(
+        'default' => '',
+        'type' => 'option'
+    )
+);
+$wp_customize->add_control(
+
+    'poligon22_email_control',
+
+    array(
+        'type' => 'text',
+        'label' => "E-Mail",
+        'section' => 'data_site_section',
+
+        'settings' => 'poligon22_email'
+    )
+);
+
+$wp_customize->add_setting(
+
+    'poligon22_phone',
+
+    array(
+        'default' => '',
+        'type' => 'option'
+    )
+);
+$wp_customize->add_control(
+
+    'poligon22_phone_control',
+
+    array(
+        'type' => 'text',
+        'label' => "Телефон",
+        'section' => 'data_site_section',
+
+        'settings' => 'poligon22_phone'
+    )
+);
+
+}
+add_action( 'customize_register', 'mytheme_customize_register' );
