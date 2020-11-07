@@ -15,24 +15,43 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+<main id="main" class="is-main">
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+	<section class="is-breadcrumbs">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item">
+								<a href="<?php echo get_home_url(); ?>">
+									Главная
+								</a>
+							</li>
+							<li class="breadcrumb-item active" aria-current="page">
+								<? the_title(); ?>
+							</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</section>
 
-			get_template_part( 'template-parts/content', 'page' );
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-		endwhile; // End of the loop.
-		?>
-
-	</main><!-- #main -->
+	<section class="is-default container-xxl container-xl container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h2>
+					<? the_title(); ?>
+				</h2>
+			</div>
+		</div>
+		<div class="row mt-3">
+			<div class="col-md-12 content">
+				<? the_content(); ?>
+			</div>
+		</div>
+	</section>
 
 <?php
-get_sidebar();
 get_footer();

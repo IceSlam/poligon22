@@ -1,6 +1,7 @@
 <?php
 /**
  * The main template file
+ * Template Name: Главная страница
  *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
@@ -15,43 +16,84 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+<main id="main" class="is-main">
 
-		<?php
-		if ( have_posts() ) :
+		<section class="is-slider">
+			<div class="is-slider__wrapper">
+				<div uk-slider="center: true; finite: true; autoplay: true;">
 
-			if ( is_home() && ! is_front_page() ) :
-				?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-				<?php
-			endif;
+					<div class="uk-position-relative uk-light" tabindex="-1">
 
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
+							<ul class="uk-slider-items uk-child-width-1@s uk-grid">
+								<li>
+									<div class="is-slider__slide" style="background: linear-gradient(270deg, rgba(0, 0, 0, 0.3) 0%, rgba(0,0,0,.6) 100%), url(./assets/img/slider_bg1.jpg);">
+										<div class="is-slider__slide-content container-xxl container-xl container">
+											<div class="col-lg-7">
+												<h4 class="sub">
+													Лазертаг с полным погружением
+												</h4>
+												<h3 class="title">
+													в клубе «Полигон 22»
+												</h3>
+												<p class="description">
+													Лазертаг - командная игра и сногсшибательное развлечение для взрослых и детей от 7 лет. Эта игра полностью безопасна и не причиняет болевых ощущений.
+												</p>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="is-slider__slide" style="background: linear-gradient(270deg, rgba(0, 0, 0, 0.3) 0%, rgba(0,0,0,.6) 100%), url(./assets/img/slider_bg1.jpg);">
+										<div class="is-slider__slide-content container-xxl container-xl container">
+											<div class="col-lg-7">
+												<h4 class="sub">
+													Лазертаг с полным погружением
+												</h4>
+												<h3 class="title">
+													в клубе «Полигон 22»
+												</h3>
+												<p class="description">
+													Лазертаг - командная игра и сногсшибательное развлечение для взрослых и детей от 7 лет. Эта игра полностью безопасна и не причиняет болевых ощущений.
+												</p>
+											</div>
+										</div>
+									</div>
+								</li>
+									<li>
+										<div class="is-slider__slide" style="background: linear-gradient(270deg, rgba(0, 0, 0, 0.3) 0%, rgba(0,0,0,.6) 100%), url(./assets/img/slider_bg1.jpg);">
+											<div class="is-slider__slide-content container-xxl container-xl container">
+												<div class="col-lg-7">
+													<h4 class="sub">
+														Лазертаг с полным погружением
+													</h4>
+													<h3 class="title">
+														в клубе «Полигон 22»
+													</h3>
+													<p class="description">
+														Лазертаг - командная игра и сногсшибательное развлечение для взрослых и детей от 7 лет. Эта игра полностью безопасна и не причиняет болевых ощущений.
+													</p>
+												</div>
+											</div>
+										</div>
+									</li>
+							</ul>
 
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
+							<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slider-item="previous">
+								<img src="./assets/img/slider_prev.svg" alt="">
+							</a>
+							<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slider-item="next">
+								<img src="./assets/img/slider_prev.svg" alt="" style="transform: rotate(180deg)">
+							</a>
 
-			endwhile;
+					</div>
 
-			the_posts_navigation();
+					<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
 
-		else :
+				</div>
+			</div>
+		</section>
 
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
-		?>
-
-	</main><!-- #main -->
 
 <?php
-get_sidebar();
 get_footer();
+?>
