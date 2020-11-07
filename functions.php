@@ -387,5 +387,49 @@ $wp_customize->add_control(
     )
 );
 
+$wp_customize->add_setting(
+
+    'poligon22_address',
+
+    array(
+        'default' => '',
+        'type' => 'option'
+    )
+);
+$wp_customize->add_control(
+
+    'poligon22_address_control',
+
+    array(
+        'type' => 'text',
+        'label' => "Адрес",
+        'section' => 'data_site_section',
+
+        'settings' => 'poligon22_address'
+    )
+);
+
+$wp_customize->add_setting(
+
+    'poligon22_years',
+
+    array(
+        'default' => '',
+        'type' => 'option'
+    )
+);
+$wp_customize->add_control(
+
+    'poligon22_years_control',
+
+    array(
+        'type' => 'text',
+        'label' => "Количество лет на рынке",
+        'section' => 'data_site_section',
+
+        'settings' => 'poligon22_years'
+    )
+);
+
 }
 add_action( 'customize_register', 'mytheme_customize_register' );

@@ -31,7 +31,7 @@
           </div>
           <div class="col-md-6 col-lg-3">
             <p class="is-footer__games-counter">
-              11 лет организуем
+              <? echo get_option( 'poligon22_years' ); ?> организуем
             </p>
             <p class="is-footer__games-type">
               игры в лазертаг
@@ -39,33 +39,69 @@
           </div>
           <div class="col-md-6 col-lg-3">
             <div class="is-footer__phone">
-              <a href="tel:+7 (3852) 39-52-90" class="tel">
-                +7 (3852) 39-52-90
-              </a>
+              <?
+              	$poligon22_phone = get_option( 'poligon22_phone' );
+                	if ($poligon22_phone) { ?>
+  		            <a href="tel:<? echo get_option( 'poligon22_phone' ); ?>" class="tel">
+  		              <? echo get_option( 'poligon22_phone' ); ?>
+  		            </a> <?
+  							}
+              ?>
               <br>
-              <a href="mailto:poligon22@list.ru" class="email">
-                Эл. почта: poligon22@list.ru
-              </a>
+              <?
+              	$poligon22_email = get_option( 'poligon22_email' );
+                	if ($poligon22_email) { ?>
+  		            <a href="mailto:<? echo get_option( 'poligon22_email' ); ?>" class="email">
+  									Эл. почта:
+  		              <? echo get_option( 'poligon22_email' ); ?>
+  		            </a> <?
+  							}
+              ?>
               <br>
               <p class="city">
-                г. Барнаул
+              <?
+              	$poligon22_address = get_option( 'poligon22_address' );
+                	if ($poligon22_address) {
+  		            echo get_option( 'poligon22_address' );
+  							}
+              ?>
               </p>
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
             <div class="is-footer__socials mt-3">
-              <a href="https://vk.com" class="social vk">
-                <i class="fab fa-vk"></i>
-              </a>
-              <a href="https://youtube.com" class="social yt">
-                <i class="fab fa-youtube"></i>
-              </a>
-              <a href="https://ok.ru" class="social ok">
-                <i class="fab fa-odnoklassniki"></i>
-              </a>
-              <a href="https://instagram.com" class="social inst">
-                <i class="fab fa-instagram"></i>
-              </a>
+              <?
+  							$poligon22_vk = get_option( 'poligon22_vk' );
+  								if ($poligon22_vk) { ?>
+  								<a href="<? echo get_option( 'poligon22_vk' ); ?>" class="social vk" target="_blank">
+  									<i class="fab fa-vk"></i>
+  								</a> <?
+  							}
+  						?>
+  						<?
+  							$poligon22_youtube = get_option( 'poligon22_youtube' );
+  								if ($poligon22_youtube) { ?>
+  								<a href="<? echo get_option( 'poligon22_youtube' ); ?>" class="social yt" target="_blank">
+  									<i class="fab fa-youtube"></i>
+  								</a> <?
+  							}
+  						?>
+  						<?
+  							$poligon22_ok = get_option( 'poligon22_ok' );
+  								if ($poligon22_ok) { ?>
+  								<a href="<? echo get_option( 'poligon22_ok' ); ?>" class="social ok" target="_blank">
+  									<i class="fab fa-odnoklassniki"></i>
+  								</a> <?
+  							}
+  						?>
+  						<?
+  							$poligon22_instagram = get_option( 'poligon22_instagram' );
+  								if ($poligon22_instagram) { ?>
+  								<a href="<? echo get_option( 'poligon22_instagram' ); ?>" class="social inst" target="_blank">
+  									<i class="fab fa-instagram"></i>
+  								</a> <?
+  							}
+  						?>
             </div>
             <a href="https://alianscompany.ru" class="btn alians mt-2 btn-block text-right">
               Разработка сайта Альянс+
