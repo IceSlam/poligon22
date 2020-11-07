@@ -43,7 +43,7 @@ get_header();
 											</div>
 										</div>
 									</li>
-              <?php endwhile; ?>
+              	<?php endwhile; ?>
 							</ul>
 
 							<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slider-item="previous">
@@ -100,6 +100,22 @@ get_header();
           <div class="col-lg-5">
           </div>
         </div>
+      </div>
+    </section>
+
+		<section class="is-advantages container-fluid">
+      <div class="row">
+				<?php while ( have_rows('index_advantages') ) : the_row(); ?>
+					<div class="col mx-auto">
+	          <img src="<? the_sub_field('icon'); ?>" alt="" class="d-block img-fluid mx-auto">
+	          <h4 class="d-block mx-auto text-center">
+	            <? the_sub_field('count'); ?>
+	          </h4>
+	          <p class="d-block mx-auto text-center mb-5">
+	            <? the_sub_field('label'); ?>
+	          </p>
+	        </div>
+				<?php endwhile; ?>
       </div>
     </section>
 

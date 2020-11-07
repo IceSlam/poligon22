@@ -14,6 +14,10 @@
     margin-top: 2rem;
   }
 
+  .is-footer .brand {
+    padding-top: 1rem;
+  }
+
   .is-header .brand a,
   .is-footer .brand a {
     justify-content: center;
