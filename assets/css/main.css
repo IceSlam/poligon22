@@ -2833,3 +2833,35 @@ textarea.form-control {
 .is-main.players .card:hover .title {
   bottom: 12%;
 }
+
+/* End of Players page */
+
+/* Scenario page */
+
+.is-main.scenario ul {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #252724;
+}
+
+.is-main.scenario ul li::before {
+  content: '+';
+  font-size: 20px;
+  font-weight: 200;
+  color: #34A5E6;
+}
+
+.is-main.scenario ul li.last {
+  margin-left: 2rem;
+}
+
+.is-main.scenario ul li.last::after {
+  content: '...'
+}
+
+.is-main.scenario ul li.last::before {
+  content: ''
+}
