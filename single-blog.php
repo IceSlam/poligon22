@@ -55,6 +55,7 @@ get_header();
 		<div class="row mt-3">
 			<div class="col-lg-12 content">
 				<? the_content(); ?>
+				<? the_post_thumbnail(); ?>
 			</div>
 		</div>
 	</section>
