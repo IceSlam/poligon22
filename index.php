@@ -302,7 +302,7 @@ get_header();
 				</div>
         <div class="col-lg-6">
 					<?php while ( have_rows('index_photos_center') ) : the_row(); ?>
-						<div data-fancybox="image" href="<? the_sub_field('photo'); ?>" class="card short" style="background: url(<? the_sub_field('photo'); ?>);float:left;margin:0 .5rem 1rem;max-width:47.5%;width:100%;min-height:227px">
+						<div data-fancybox="image" href="<? the_sub_field('photo'); ?>" class="card short" style="background: url(<? the_sub_field('photo'); ?>);">
 	            <div class="mask">
 	              <div class="angle top-left"></div>
 	              <div class="angle top-right"></div>
@@ -365,6 +365,31 @@ get_header();
 
             <ul class="uk-slider-nav uk-dotnav"></ul>
 
+          </div>
+        </div>
+      </div>
+    </section>
+
+		<section class="is-joinus">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <p class="text first">
+              Присоединяйся к нам
+            </p>
+            <p class="text second">
+              Закажи Игру!
+            </p>
+          </div>
+          <div class="col-lg-2 d-flex justify-content-center arrows-block">
+            <img src="<? echo get_template_directory_uri() . '/assets/img/joinus_arrow.svg' ?>" alt="" class="img-fluid arrow">
+            <img src="<? echo get_template_directory_uri() . '/assets/img/joinus_arrow.svg' ?>" alt="" class="img-fluid arrow">
+            <img src="<? echo get_template_directory_uri() . '/assets/img/joinus_arrow.svg' ?>" alt="" class="img-fluid arrow">
+          </div>
+          <div class="offset-lg-1 col-lg-4 d-flex align-items-center">
+            <a href="#" class="btn order btn-block">
+              Заказать игру
+            </a>
           </div>
         </div>
       </div>

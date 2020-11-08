@@ -1154,7 +1154,10 @@ textarea.form-control {
 }
 
 .is-photogalery .card.short {
-  min-height: 220px;
+  float:left;margin:0 .5rem 1rem;
+  max-width:47.5%;
+  width:100%;
+  min-height:227px
 }
 
 .is-photogalery .card .mask {

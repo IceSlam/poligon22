@@ -46,6 +46,10 @@
     display: none;
   }
 
+  .is-endgame .is-endgame__btn {
+    margin: 5.25rem 0 0 1rem;
+  }
+
   .is-slider .uk-slider-nav.uk-dotnav {
     display: none;
   }
@@ -53,6 +57,15 @@
   .is-photogalery {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .is-selection h2,
+  .is-photogalery h2 {
+    font-size: 40px;
+  }
+
+  .is-selection .variants p.first {
+    padding-top: 0;
   }
 
   .is-selection .row.mt-5 {
@@ -68,8 +81,18 @@
     text-align: center !important;
   }
 
+  .is-photogalery .card.short {
+    margin: 0 0 1rem;
+    float: none;
+    max-width: 100%;
+  }
+
   .is-features .content {
     padding-left: 1rem;
+  }
+
+  .is-features .text .main {
+    font-size: 26px;
   }
 
   .is-features .line img {
@@ -260,6 +283,13 @@
     .is-pubs .card .bordered-frame-right {
       right: -2%;
     }
+
+    .is-photogalery .card.short {
+      margin: 0 0 1rem;
+      max-width: 100%;
+      width: 100%;
+      min-height: 470px;
+    }
 }
 
 @media screen and (min-width:768px) and (max-width:991px) {
@@ -378,6 +408,14 @@
   .is-pubs .card .bordered-frame-right {
     display: none;
   }
+
+  .is-photogalery .card.short {
+    max-width: 46.5%;
+  }
+
+  .is-footer {
+    padding-bottom: 0 !important;
+  }
 }
 
 @media screen and (min-width:1200px) and (max-width:1399px) {
@@ -424,5 +462,14 @@
   .is-pubs .card .bordered-frame-right,
   .is-pubs .card .bordered-frame-bottom {
     right: -3%;
+  }
+
+  .is-photogalery .card.short {
+    max-width: 47.1%;
+  }
+
+  .is-footer {
+    padding-top: 2rem !important;
+    padding-bottom: 0 !important;
   }
 }
