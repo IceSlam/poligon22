@@ -305,7 +305,7 @@ a.alians svg.alians-logo path.fill {
   height: 14px;
 }
 
-.is-breadcrumbs a + a::before {
+.is-breadcrumbs span span span a::before {
   content: '';
   background-image: url(../img/breadcrumb_chevron.svg);
   background-position: center;
@@ -313,7 +313,9 @@ a.alians svg.alians-logo path.fill {
   -webkit-background-size: contain;
   background-size: contain;
   margin-right: .5rem;
+  margin-left: .5rem;
   width: 10px;
+  height: 14px;
 }
 
 .modal-dialog {
