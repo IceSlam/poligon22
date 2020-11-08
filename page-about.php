@@ -181,5 +181,62 @@ get_header();
 		</div>
 	</section>
 
+	<section class="is-certificates">
+		<div class="container">
+			<div class="row title-block" style="margin-bottom: -4.5rem;">
+				<div class="col-lg-6">
+					<h2>
+						Почетные грамоты
+					</h2>
+					<h3>
+						и благодарственные письма
+					</h3>
+				</div>
+				<div class="offset-lg-3 col-lg-3"></div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="uk-position-relative uk-light" style="padding-top: 9rem;" tabindex="-1" uk-slider>
+
+						<ul class="uk-slider-items uk-child-width-1 uk-child-width-1-4@m uk-grid">
+							<?php while ( have_rows('about_certificates') ) : the_row(); ?>
+								<li data-fancybox="certificatesGalery" href="<? the_sub_field('image'); ?>">
+										<div class="uk-panel">
+												<img src="<? the_sub_field('image'); ?>" alt="" class="mb-2">
+												<div class="text">
+													<div class="content">
+														<p>
+															<? the_sub_field('description'); ?>
+														</p>
+													</div>
+												</div>
+										</div>
+								</li>
+							<?php endwhile; ?>
+						</ul>
+
+						<a class="uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+						<a class="uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+						<ul class="uk-slider-nav uk-dotnav"></ul>
+
+					</div>
+				</div>
+			</div>
+			<div class="row mt-4">
+				<div class="col-md-12 content">
+					<? the_field('about_certificates_info'); ?>
+				</div>
+			</div>
+			<div class="row mt-4">
+				<div class="col-md-12 d-flex justify-content-center">
+					<a href="#" class="btn request mx-auto">
+						Оставить заявку на игру
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
 <?php
 get_footer();
