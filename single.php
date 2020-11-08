@@ -6,6 +6,8 @@ if ( in_category( 'weapons' ) ) {
     include( TEMPLATEPATH.'/single-blog.php' );
 } else if ( in_category( 'gallery' ) ) {
     include( TEMPLATEPATH.'/single-gallery.php' );
+} else if ( in_category( 'platforms' ) ) {
+    include( TEMPLATEPATH.'/single-platforms.php' );
 } else {
     include( TEMPLATEPATH.'/page.php' );
 }

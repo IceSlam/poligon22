@@ -289,7 +289,6 @@ a.alians svg.alians-logo path.fill {
 
 .is-breadcrumbs .breadcrumb_last {
   opacity: .5;
-  text-transform: capitalize;
 }
 
 .is-breadcrumbs .breadcrumb_last::before {
