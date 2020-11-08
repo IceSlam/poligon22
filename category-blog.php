@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying Weapons page
+ * The template for displaying Blog page
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -33,19 +33,19 @@ get_header();
 		</div>
 	</section>
 
-	<section class="is-weapons-list container-xxl container-xl container">
+	<section class="is-pubs container-xxl container-xl container">
 		<div class="row">
 			<div class="col-lg-12">
 				<h2>
-					Арсенал оружия
+					Статьи
 				</h2>
 			</div>
 		</div>
-		<div class="row mt-3 weapon-items">
+		<div class="row mt-3">
 			<?
           $args = array(
             'posts_per_page' => 9,
-            'category__in' => 5,
+            'category__in' => 3,
             'paged' => get_query_var('paged') ?: 1
           );
 
@@ -54,20 +54,37 @@ get_header();
               while ( $query->have_posts() ) {
                 $query->the_post();
                 ?>
-								<div class="col-md-6 col-lg-4 mb-3">
-									<div class="card">
-										<div class="img-block">
-											<img src="<? the_field('weapon_img') ?>" alt="" class="img-fluid">
+								<div class="card mb-3">
+									<div class="row g-0">
+										<div class="col-md-3 hover-overlay img-block">
+											<div class="img" style="background: url(<? $image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full'); echo $image_url[0]; ?>)">
+												<img src="<? echo get_template_directory_uri() . '/assets/img/pubs_item1.jpg'; ?>" alt="" class="img-fluid" style="opacity:0">
+												<div class="mask"></div>
+											</div>
+											<div class="bordered-frame-top"></div>
+											<div class="bordered-frame-bottom"></div>
+											<div class="bordered-frame-left"></div>
+											<div class="bordered-frame-right"></div>
 										</div>
-										<a href="<? the_permalink(); ?>" class="title">
-											<? the_title(); ?>
-										</a>
-										<span class="btn plus">
-											<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<line x1="5.5" y1="11" x2="5.5" y2="2.18557e-08" stroke="#84AF5A"/>
-												<line x1="11" y1="5.5" x2="-4.37113e-08" y2="5.5" stroke="#84AF5A"/>
-											</svg>
-										</span>
+										<div class="col-md-9">
+											<div class="card-body">
+												<h5 class="card-title">
+													<? the_title(); ?>
+												</h5>
+												<p class="card-text">
+													<? the_excerpt(); ?>
+												<p class="card-text">
+													<small class="text-muted">
+														<a href="<? the_permalink(); ?>" class="btn more mb-4">
+															<span class="plus">
+																+
+															</span>
+															Подробнее
+														</a>
+													</small>
+												</p>
+											</div>
+										</div>
 									</div>
 								</div>
                 <?;
@@ -76,7 +93,6 @@ get_header();
             }
             wp_reset_postdata();
           ?>
-
 		</div>
 		<div class="row mt-3">
 			<div class="col-lg-12 d-flex align-items-center" style="position:relative">
@@ -86,13 +102,6 @@ get_header();
 							wp_bootstrap_pagination();
 					?>
 				</div>
-			</div>
-		</div>
-		<div class="row mt-5">
-			<div class="col-lg-12 d-flex justify-content-center">
-				<a href="#" class="btn order ml-4 mr-4">
-					Заказать игру
-				</a>
 			</div>
 		</div>
 	</section>

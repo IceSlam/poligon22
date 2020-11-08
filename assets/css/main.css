@@ -289,6 +289,7 @@ a.alians svg.alians-logo path.fill {
 
 .is-breadcrumbs .breadcrumb_last {
   opacity: .5;
+  text-transform: capitalize;
 }
 
 .is-breadcrumbs .breadcrumb_last::before {
@@ -2173,6 +2174,10 @@ textarea.form-control {
 
 .is-pubs .info .author::before {
   content: '|'
+}
+
+.is-pubs .content {
+  font-family: Fira Sans;
 }
 
 /* End 0f Pubs item page */
