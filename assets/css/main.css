@@ -234,7 +234,7 @@ a:hover {
 
 
 .is-footer {
-  padding: 3.125rem 0 0;
+  padding: 3.125rem 0 1rem;
   box-shadow: inset 0px 1px 0px #ECECEC;
 }
 
@@ -272,25 +272,27 @@ a.alians svg.alians-logo path.fill {
   padding: .5rem 0;
 }
 
-.is-breadcrumbs .breadcrumb-item {
+.is-breadcrumbs a,
+.is-breadcrumbs span
+ {
   font-family: Fira Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 110%;
   color: #252724;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flex;
+  display: inline-flex;
+  align-items: center;
 }
 
-.is-breadcrumbs .breadcrumb-item a {
-  color: #252724;
-}
-
-.is-breadcrumbs .breadcrumb-item.active,
-.is-breadcrumbs .breadcrumb-item.active a {
+.is-breadcrumbs .breadcrumb_last {
   opacity: .5;
 }
 
-.is-breadcrumbs .breadcrumb-item + .breadcrumb-item::before {
+.is-breadcrumbs .breadcrumb_last::before {
+  display: inline-block;
   content: '';
   background-image: url(../img/breadcrumb_chevron.svg);
   background-position: center;
@@ -298,6 +300,20 @@ a.alians svg.alians-logo path.fill {
   -webkit-background-size: contain;
   background-size: contain;
   margin-right: .5rem;
+  margin-left: .5rem;
+  width: 10px;
+  height: 14px;
+}
+
+.is-breadcrumbs a + a::before {
+  content: '';
+  background-image: url(../img/breadcrumb_chevron.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  margin-right: .5rem;
+  width: 10px;
 }
 
 .modal-dialog {

@@ -432,3 +432,14 @@ $wp_customize->add_control(
 
 }
 add_action( 'customize_register', 'mytheme_customize_register' );
+
+require_once('wp_bootstrap_pagination.php');
+
+function customize_wp_bootstrap_pagination($args) {
+
+    $args['previous_string'] = 'previous';
+    $args['next_string'] = 'next';
+
+    return $args;
+}
+add_filter('wp_bootstrap_pagination_defaults', 'customize_wp_bootstrap_pagination');

@@ -22,16 +22,11 @@ get_header();
 			<div class="row">
 				<div class="col-lg-12">
 					<nav aria-label="breadcrumb">
-						<ol class="breadcrumb">
-							<li class="breadcrumb-item">
-								<a href="<?php echo get_home_url(); ?>">
-									Главная
-								</a>
-							</li>
-							<li class="breadcrumb-item active" aria-current="page">
-								<? the_title(); ?>
-							</li>
-						</ol>
+					<?php
+		         if ( function_exists('yoast_breadcrumb') ) {
+		           yoast_breadcrumb( '<ol style="margin-left:0px;" class="breadcrumb bc-yoast">','</ol>' );
+		         }
+		        ?>
 					</nav>
 				</div>
 			</div>
