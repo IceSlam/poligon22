@@ -162,7 +162,7 @@ get_header();
 			</div>
 			<div class="row mt-4">
 				<div class="col-md-6 col-lg-4 view-block">
-					<a href="#" class="btn variants btn-block">
+					<a href="<? the_permalink(1279); ?>" class="btn variants btn-block">
 						<img src="<? echo get_template_directory_uri() . '/assets/img/selection_variants.svg' ?>" alt="">
 						<p class="first">
 							Смотреть

@@ -354,6 +354,7 @@ textarea.form-control {
 .is-default h2 {
   font-size: 46px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .is-default .content img {
