@@ -68,9 +68,9 @@ get_header();
 										</div>
 										<div class="col-md-9">
 											<div class="card-body">
-												<h5 class="card-title">
+												<a href="<? the_permalink(); ?>" class="card-title">
 													<? the_title(); ?>
-												</h5>
+												</a>
 												<p class="card-text">
 													<? the_excerpt(); ?>
 												<p class="card-text">

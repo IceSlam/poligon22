@@ -45,10 +45,6 @@ get_header();
 						<i class="fas fa-clock mr-2"></i>
 						<? the_date(); ?>
 					</p>
-					<p class="author ml-1">
-						<i class="fas fa-user ml-2 mr-2"></i>
-						<? the_author(); ?>
-					</p>
 				</div>
 			</div>
 		</div>

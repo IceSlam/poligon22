@@ -103,7 +103,7 @@
   							}
   						?>
             </div>
-            <a href="https://alianscompany.ru" class="btn alians mt-2 btn-block text-right">
+            <a href="https://alianscompany.ru" class="btn alians mt-2 btn-block text-right" target="_blank">
               Разработка сайта Альянс+
               <svg class="alians-logo" width="52" height="30" viewBox="0 0 52 30" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0)">
