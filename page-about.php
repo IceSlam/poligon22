@@ -238,5 +238,50 @@ get_header();
 		</div>
 	</section>
 
+	<section class="is-partners container-xxl container-xl container">
+		<div class="row title-block" style="margin-bottom: -4.5rem;">
+			<div class="col-lg-6">
+				<h2>
+					С нами играют
+				</h2>
+			</div>
+			<div class="offset-lg-3 col-lg-3"></div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="uk-position-relative uk-light" style="padding-top: 9rem;" tabindex="-1" uk-slider>
+
+					<ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-6@m uk-grid">
+						<?php while ( have_rows('about_partners') ) : the_row(); ?>
+							<li>
+								<div class="uk-panel">
+										<img src="<? the_sub_field('logo'); ?>" alt="">
+								</div>
+							</li>
+						<?php endwhile; ?>
+					</ul>
+
+					<a class="uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+					<a class="uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+					<ul class="uk-slider-nav uk-dotnav"></ul>
+
+				</div>
+			</div>
+		</div>
+		<div class="row mt-4">
+			<div class="col-md-12 content">
+				<? the_field('about_partners_info'); ?>
+			</div>
+		</div>
+		<div class="row mt-4">
+			<div class="col-md-12 d-flex justify-content-center">
+				<a href="#" class="btn request mx-auto">
+					Оставить заявку на игру
+				</a>
+			</div>
+		</div>
+	</section>
+
 <?php
 get_footer();
