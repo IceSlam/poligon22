@@ -113,5 +113,73 @@ get_header();
 		</div>
 	</section>
 
+	<section class="is-selection">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>
+						Тематические площадки
+					</h2>
+				</div>
+			</div>
+			<div class="row mt-5">
+				<?
+				$args = array(
+					'posts_per_page' => 9,
+					'category__in' => 6
+				);
+
+					$query = new WP_Query( $args );
+					if ( $query->have_posts() ) {
+						while ( $query->have_posts() ) {
+							$query->the_post();
+							?>
+							<div class="col-md-6 col-lg-4 mb-3">
+								<div class="card bg-image hover-overlay">
+									<div class="img">
+										<img src="<? the_field('platform_img'); ?>" alt="" class="">
+										<div class="mask"
+										></div>
+									</div>
+									<a href="#" class="btn plus">
+										+
+									</a>
+									<div class="bordered-frame-top"></div>
+									<div class="bordered-frame-bottom"></div>
+									<div class="bordered-frame-left"></div>
+									<div class="bordered-frame-right"></div>
+									<a href="<? the_permalink(); ?>" class="title">
+										<? the_title(); ?>
+									</a>
+								</div>
+							</div>
+							<?;
+						}
+					} else {
+					}
+					wp_reset_postdata();
+				?>
+			</div>
+			<div class="row mt-4">
+				<div class="col-md-6 col-lg-4 view-block">
+					<a href="#" class="btn variants btn-block">
+						<img src="<? echo get_template_directory_uri() . '/assets/img/selection_variants.svg' ?>" alt="">
+						<p class="first">
+							Смотреть
+						</p>
+						<p class="second">
+							Варианты сценариев
+						</p>
+					</a>
+				</div>
+				<div class="col-md-6 offset-lg-4 col-lg-4">
+					<a href="<? echo get_category_link(6); ?>" class="btn view">
+						Смотреть все площадки
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
 <?php
 get_footer();
