@@ -54,7 +54,7 @@ get_header();
 				if( $images ): ?>
 								<?php foreach( $images as $image ): ?>
 									<div class="col-md-6 col-lg-4 col-xl-3">
-										<div data-fancybox="image" href="<?php echo esc_url($image['url']); ?>" class="card short" style="background: url(<?php echo esc_url($image['sizes']['thumbnail']); ?>);">
+										<div data-fancybox="image" href="<?php echo esc_url($image['url']); ?>" class="card short" style="background: url(<?php echo esc_url($image['url']); ?>);">
 											<div class="mask">
 												<div class="angle top-left"></div>
 												<div class="angle top-right"></div>

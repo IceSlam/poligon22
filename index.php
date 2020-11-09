@@ -144,23 +144,25 @@ get_header();
                 $query->the_post();
                 ?>
 								<div class="col-md-6 col-lg-4 mb-3">
-			            <div class="card bg-image hover-overlay">
-			              <div class="img">
-			                <img src="<? the_field('platform_img'); ?>" alt="" class="">
-			                <div class="mask"
-			                ></div>
-			              </div>
-			              <a href="#" class="btn plus">
-			                +
-			              </a>
-			              <div class="bordered-frame-top"></div>
-			              <div class="bordered-frame-bottom"></div>
-			              <div class="bordered-frame-left"></div>
-			              <div class="bordered-frame-right"></div>
-			              <a href="<? the_permalink(); ?>" class="title">
-			                <? the_title(); ?>
-			              </a>
-			            </div>
+									<a href="<? the_permalink(); ?>">
+										<div class="card bg-image hover-overlay">
+				              <div class="img">
+				                <img src="<? the_field('platform_img'); ?>" alt="" class="">
+				                <div class="mask"
+				                ></div>
+				              </div>
+				              <a href="#" class="btn plus">
+				                +
+				              </a>
+				              <div class="bordered-frame-top"></div>
+				              <div class="bordered-frame-bottom"></div>
+				              <div class="bordered-frame-left"></div>
+				              <div class="bordered-frame-right"></div>
+				              <a href="<? the_permalink(); ?>" class="title">
+				                <? the_title(); ?>
+				              </a>
+				            </div>
+									</a>
 			          </div>
                 <?;
               }
