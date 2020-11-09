@@ -71,8 +71,9 @@ get_header();
 												<a href="<? the_permalink(); ?>" class="card-title">
 													<? the_title(); ?>
 												</a>
-												<p class="card-text">
+												<div class="card-text">
 													<? the_excerpt(); ?>
+												</div>
 												<p class="card-text">
 													<small class="text-muted">
 														<a href="<? the_permalink(); ?>" class="btn more mb-4">
