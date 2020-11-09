@@ -266,7 +266,12 @@ get_header();
 	              </div>
 	            </div>
 						<?php endwhile; ?>
-            <a href="#" class="btn calculate">
+            <a
+							class="btn calculate"
+							type="button"
+	            data-toggle="modal"
+	            data-target="#order-game"
+	          >
               Рассчитать стоимость
             </a>
           </div>
@@ -389,7 +394,12 @@ get_header();
             <img src="<? echo get_template_directory_uri() . '/assets/img/joinus_arrow.svg' ?>" alt="" class="img-fluid arrow">
           </div>
           <div class="offset-lg-1 col-lg-4 d-flex align-items-center">
-            <a href="#" class="btn order btn-block">
+            <a
+							class="btn order btn-block"
+							type="button"
+	            data-toggle="modal"
+	            data-target="#order-game"
+	          >
               Заказать игру
             </a>
           </div>

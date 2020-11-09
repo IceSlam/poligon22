@@ -102,7 +102,12 @@ get_header();
 			</div>
 			<div class="row">
 				<div class="col-md-12 d-flex justify-content-center">
-					<a href="#" class="btn order mt-4 mx-auto">
+					<a
+						class="btn order mt-4 mx-auto"
+						type="button"
+            data-toggle="modal"
+            data-target="#order-game"
+          >
 						Заказать игру
 					</a>
 				</div>
@@ -227,7 +232,12 @@ get_header();
 			</div>
 			<div class="row mt-4">
 				<div class="col-md-12 d-flex justify-content-center">
-					<a href="#" class="btn request mx-auto">
+					<a
+						class="btn request mx-auto"
+						type="button"
+            data-toggle="modal"
+            data-target="#order-game"
+          >
 						Оставить заявку на игру
 					</a>
 				</div>
@@ -273,7 +283,12 @@ get_header();
 		</div>
 		<div class="row mt-4">
 			<div class="col-md-12 d-flex justify-content-center">
-				<a href="#" class="btn request mx-auto">
+				<a
+					class="btn request mx-auto"
+					type="button"
+					data-toggle="modal"
+					data-target="#order-game"
+				>
 					Оставить заявку на игру
 				</a>
 			</div>
