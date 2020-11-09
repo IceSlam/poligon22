@@ -342,6 +342,8 @@ a.alians svg.alians-logo path.fill {
   border-radius: 0 !important;
   background: #FBFBFB;
   height: 3rem;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
 }
 
 textarea.form-control {
@@ -911,6 +913,18 @@ textarea.form-control {
   text-transform: uppercase;
   color: #FFFFFF;
   transition: all .5s;
+}
+
+.modal-submit {
+  background: #D93636 !important;
+  color: #fff !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 0px !important;
+}
+
+.modal-submit:hover {
+  background: #FB5050 !important;
 }
 
 .is-weapons {

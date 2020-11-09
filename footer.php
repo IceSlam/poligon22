@@ -170,7 +170,7 @@
               ></button>
             </div>
             <div class="modal-body">
-              <div class="mb-3">
+          <!--     <div class="mb-3">
                 <label for="order-game-name" class="form-label">
                   Ваше имя*
                 </label>
@@ -206,7 +206,8 @@
                   Нажимая кнопку "Заказать" Вы даёте свое согласие на обработку персональных данных
                 </label>
               </div>
-              <button type="submit" class="btn d-block modal-submit">Заказать</button>
+              <button type="submit" class="btn d-block modal-submit">Заказать</button> -->
+              <?php echo do_shortcode( '[contact-form-7 id="76" title="Заказать игру"]' ); ?>
             </div>
           </div>
         </div>
