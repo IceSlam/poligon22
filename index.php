@@ -27,7 +27,7 @@ get_header();
 							<ul class="uk-slider-items uk-child-width-1@s uk-grid">
 								<?php while ( have_rows('index_slides') ) : the_row(); ?>
 									<li>
-										<div class="is-slider__slide" style="background: linear-gradient(270deg, rgba(0, 0, 0, 0.3) 0%, rgba(0,0,0,.6) 100%), url(<? the_sub_field('background'); ?>);">
+										<div class="is-slider__slide" style="background: linear-gradient(270deg, rgba(0, 0, 0, 0.3) 0%, rgba(0,0,0,.6) 100%), url(<? the_sub_field('background'); ?>);background-position:center bottom !important;">
 											<div class="is-slider__slide-content container-xxl container-xl container">
 												<div class="col-lg-7">
 													<h4 class="sub">
@@ -275,7 +275,7 @@ get_header();
 		<section class="is-features">
       <div class="wrapper container-fluid">
         <div class="row">
-          <div class="col-lg-6 bg" style="background: url(<? echo get_template_directory_uri() . '/assets/img/features_img_bg.jpg' ?>)">
+          <div class="col-lg-6 bg" style="background: url(<? echo get_template_directory_uri() . '/assets/img/features_img_bg.jpg' ?>);">
           </div>
           <div class="col-lg-6 content">
 						<?php while ( have_rows('index_features') ) : the_row(); ?>
