@@ -11,7 +11,7 @@
 
   .is-header .is-brand__title,
   .is-footer .is-brand__title {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
   }
 
   .is-footer .brand {
@@ -25,7 +25,7 @@
 
   .is-header .brand a .is-brand,
   .is-footer .brand a .is-brand {
-    max-width: 40%;
+    max-width: 45%;
     text-align: center;
   }
 
@@ -60,8 +60,18 @@
   }
 
   .is-selection h2,
-  .is-photogalery h2 {
+  .is-photogalery h2,
+  .is-photogalery-block h2,
+  .is-main.platforms .is-platforms-list h2 {
     font-size: 40px;
+  }
+
+  .is-photogalery-block .card a.title {
+    font-size: 16px;
+  }
+
+  .is-photogalery-block .card a.view {
+    font-size: 12px;
   }
 
   .is-selection .variants p.first {
@@ -196,7 +206,9 @@
       justify-content: center;
     }
 
-    .is-header .is-brand {
+    .is-header .is-brand__title,
+    .is-footer .is-brand__title {
+      margin-top: 2rem;
     }
 
     .is-header .is-header__socials,
@@ -214,7 +226,7 @@
     }
 
     .is-footer {
-      padding: 0 0 .5rem !important;
+      padding: 1rem 0 .5rem !important;
     }
 
     .is-joinus .arrows-block {
@@ -319,6 +331,17 @@
     margin-top: 2rem;
     transform: rotate(90deg);
     margin-bottom: 3rem;
+  }
+
+  .is-footer .is-footer__games-counter,
+  .is-header .is-header__games-counter,
+  .is-footer .is-footer__games-type,
+  .is-header .is-header__games-type {
+    text-align: right;
+  }
+
+  .is-modals {
+    margin-bottom: -2rem;
   }
 
   .is-footer {
