@@ -28,6 +28,12 @@
     transition: left 1s ease-in, width 1s ease-in;
   }
 
+  .is-navbar .navbar-nav {
+    width: 0;
+    opacity: 0;
+    transition: width .5s, opacity .5s;
+  }
+
   .is-navbar.show {
     position: fixed;
     top: 0;
@@ -37,6 +43,12 @@
     z-index: 1499;
     margin-top: 0 !important;
     transition: left 1s ease-out, width 1s ease-out;
+  }
+
+  .is-navbar.show .navbar-nav {
+    width: 100%;
+    opacity: 1;
+    transition: width .5s, opacity .5s;
   }
 
   .is-navbar .collapse {
@@ -63,6 +75,10 @@
 
   .is-header {
     padding-bottom: 2rem;
+  }
+
+  .is-header .is-navbar .navbar-nav .nav-item .nav-link {
+    text-align: center;
   }
 
   .is-header .is-header__games-counter,
@@ -318,6 +334,10 @@
     padding-bottom: 2rem;
   }
 
+  .is-header .is-navbar .navbar-nav .nav-item .nav-link {
+    text-align: center;
+  }
+
     .is-header .is-header__games-counter,
     .is-footer .is-footer__games-counter,
     .is-header .is-header__games-type,
@@ -492,6 +512,10 @@
 
   .fas.fa-times.white {
     transition: color 1s .75s;
+  }
+
+  .is-header .is-navbar .navbar-nav .nav-item .nav-link {
+    text-align: center;
   }
 
   .is-header {
