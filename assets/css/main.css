@@ -451,6 +451,7 @@ textarea.form-control {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #FFFFFF;
+  min-height: 42px;
 }
 
 .is-slider .is-slider__slide-content .title {
@@ -462,6 +463,7 @@ textarea.form-control {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #F9B024;
+  min-height: 67px;
 }
 
 .is-slider .is-slider__slide-content .description {
@@ -472,6 +474,7 @@ textarea.form-control {
   line-height: 140%;
   color: #FFFFFF;
   margin-top: 2rem;
+  min-height: 93px;
 }
 
 .is-slider .uk-slider-items {
