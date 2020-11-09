@@ -117,21 +117,15 @@
         </div>
       </div>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-dark is-navbar">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark is-navbar">
       <div class="container">
-        <p class="d-lg-none mb-0 pt-3 pb-3 pl-3" style="font-family: Rubik; color: #fff;">
-          Меню
-        </p>
         <button
+					id="mobile-toggler"
           class="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#poligon22-menu"
-          aria-controls="poligon22-menu"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+					onclick="toggleMenu()"
         >
-          <i class="fas fa-bars"></i>
+          <i id="toggle-icon" class="fas fa-bars"></i>
         </button>
 
 				<?

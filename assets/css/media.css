@@ -1,5 +1,70 @@
 @media screen and (max-width:575px) {
 
+  .navbar-toggler {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    border-radius: 50%;
+    background: rgba(0,0,0,.05);
+    width: 48px;
+    height: 48px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1500;
+    color: #34A5E6 !important;
+  }
+
+  .is-navbar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    width: 0;
+    z-index: 1499;
+    margin-top: 0 !important;
+    transition: left 1s ease-in, width 1s ease-in;
+  }
+
+  .is-navbar.show {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1499;
+    margin-top: 0 !important;
+    transition: left 1s ease-out, width 1s ease-out;
+  }
+
+  .is-navbar .collapse {
+    transition: all 1.5s;
+    opacity: 0 !important;
+    height: 0;
+  }
+
+  .is-navbar.show .collapse {
+    display: block;
+    transition: all 1.5s;
+    opacity: 1 !important;
+    height: 100%;
+  }
+
+  .fas.fa-bars {
+    transition: color .5s;
+  }
+
+  .fas.fa-times.white {
+    color: #fff;
+    transition: color 1s .75s;
+  }
+
+  .is-header {
+    padding-bottom: 2rem;
+  }
+
   .is-header .is-header__games-counter,
   .is-footer .is-footer__games-counter,
   .is-header .is-header__games-type,
@@ -188,6 +253,70 @@
 }
 
 @media screen and (min-width:576px) and (max-width:767px) {
+  .navbar-toggler {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    border-radius: 50%;
+    background: rgba(0,0,0,.05);
+    width: 48px;
+    height: 48px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1500;
+    color: #34A5E6 !important;
+  }
+
+  .is-navbar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    width: 0;
+    z-index: 1499;
+    margin-top: 0 !important;
+    transition: left 1s ease-in, width 1s ease-in;
+  }
+
+  .is-navbar.show {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1499;
+    margin-top: 0 !important;
+    transition: left 1s ease-out, width 1s ease-out;
+  }
+
+  .is-navbar .collapse {
+    transition: all 1.5s;
+    opacity: 0 !important;
+    height: 0;
+  }
+
+  .is-navbar.show .collapse {
+    display: block;
+    transition: all 1.5s;
+    opacity: 1 !important;
+    height: 100%;
+  }
+
+  .fas.fa-bars {
+    transition: color .5s;
+  }
+
+  .fas.fa-times.white {
+    color: #fff;
+    transition: color 1s .75s;
+  }
+
+  .is-header {
+    padding-bottom: 2rem;
+  }
 
     .is-header .is-header__games-counter,
     .is-footer .is-footer__games-counter,
@@ -305,6 +434,69 @@
 }
 
 @media screen and (min-width:768px) and (max-width:991px) {
+  .navbar-toggler {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    border-radius: 50%;
+    background: rgba(0,0,0,.05);
+    width: 48px;
+    height: 48px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1500;
+    color: #34A5E6 !important;
+  }
+
+  .is-navbar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    width: 0;
+    z-index: 1499;
+    margin-top: 0 !important;
+    transition: left 1s ease-in, width 1s ease-in;
+  }
+
+  .is-navbar.show {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 75%;
+    z-index: 1499;
+    margin-top: 0 !important;
+    transition: left 1s ease-out, width 1s ease-out;
+  }
+
+  .is-navbar .collapse {
+    transition: all 1.5s;
+    opacity: 0 !important;
+    height: 0;
+  }
+
+  .is-navbar.show .collapse {
+    display: block;
+    transition: all 1.5s;
+    opacity: 1 !important;
+    height: 100%;
+  }
+
+  .fas.fa-bars {
+    transition: color .5s;
+  }
+
+  .fas.fa-times.white {
+    transition: color 1s .75s;
+  }
+
+  .is-header {
+    padding-bottom: 2rem;
+  }
 
   .is-endgame .is-endgame__outer {
     display: none;
