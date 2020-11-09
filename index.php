@@ -144,25 +144,23 @@ get_header();
                 $query->the_post();
                 ?>
 								<div class="col-md-6 col-lg-4 mb-3">
-									<a href="<? the_permalink(); ?>">
-										<div class="card bg-image hover-overlay">
-				              <div class="img">
-				                <img src="<? the_field('platform_img'); ?>" alt="" class="">
-				                <div class="mask"
-				                ></div>
-				              </div>
-				              <a href="#" class="btn plus">
-				                +
-				              </a>
-				              <div class="bordered-frame-top"></div>
-				              <div class="bordered-frame-bottom"></div>
-				              <div class="bordered-frame-left"></div>
-				              <div class="bordered-frame-right"></div>
-				              <a href="<? the_permalink(); ?>" class="title">
-				                <? the_title(); ?>
-				              </a>
-				            </div>
-									</a>
+			            <div class="card bg-image hover-overlay">
+			              <div class="img">
+			                <img src="<? the_field('platform_img'); ?>" alt="" class="">
+			                <div class="mask"
+			                ></div>
+			              </div>
+			              <a href="#" class="btn plus">
+			                +
+			              </a>
+			              <div class="bordered-frame-top"></div>
+			              <div class="bordered-frame-bottom"></div>
+			              <div class="bordered-frame-left"></div>
+			              <div class="bordered-frame-right"></div>
+			              <a href="<? the_permalink(); ?>" class="title">
+			                <? the_title(); ?>
+			              </a>
+			            </div>
 			          </div>
                 <?;
               }
@@ -221,20 +219,22 @@ get_header();
 							$query->the_post();
 							?>
 							<div class="col-md-6 col-lg-4 mb-3">
-			          <div class="card">
-			            <div class="img-block">
-			              <img src="<? the_field('weapon_img'); ?>" alt="<? the_title(); ?>" class="img-fluid">
-			            </div>
-			            <a href="<? the_permalink(); ?>" class="title">
-			              <? the_title(); ?>
-			            </a>
-			            <span class="btn plus">
-			              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-			                <line x1="5.5" y1="11" x2="5.5" y2="2.18557e-08" stroke="#84AF5A"/>
-			                <line x1="11" y1="5.5" x2="-4.37113e-08" y2="5.5" stroke="#84AF5A"/>
-			              </svg>
-			            </span>
-			          </div>
+			          <a href="<? the_permalink(); ?>">
+									<div class="card">
+				            <div class="img-block">
+				              <img src="<? the_field('weapon_img'); ?>" alt="<? the_title(); ?>" class="img-fluid">
+				            </div>
+				            <a href="<? the_permalink(); ?>" class="title">
+				              <? the_title(); ?>
+				            </a>
+				            <span class="btn plus">
+				              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+				                <line x1="5.5" y1="11" x2="5.5" y2="2.18557e-08" stroke="#84AF5A"/>
+				                <line x1="11" y1="5.5" x2="-4.37113e-08" y2="5.5" stroke="#84AF5A"/>
+				              </svg>
+				            </span>
+				          </div>
+			          </a>
 			        </div>
 							<?;
 						}
