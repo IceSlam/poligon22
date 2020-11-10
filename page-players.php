@@ -60,6 +60,9 @@ get_header();
 						<a class="title">
 							<? the_sub_field('name'); ?>
 						</a>
+						<a class="view">
+							<? the_sub_field('score'); ?> | <? the_sub_field('place'); ?>
+						</a>
 					</div>
 				</div>
 			<?php endwhile; ?>
