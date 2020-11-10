@@ -98,6 +98,36 @@ get_header();
 		</div>
 		<div class="row mt-5">
 			<div class="col-lg-12 d-flex justify-content-center">
+				<a class="btn get ml-4 mr-4"
+					type="button"
+					data-toggle="modal"
+					data-target="#get-photo"
+				>
+					Получить фотографии
+				</a>
+				<div
+					class="modal fade order-game"
+					id="get-photo"
+					tabindex="-1"
+					aria-labelledby="get-photo-label"
+					aria-hidden="true"
+				>
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button
+									type="button"
+									class="btn-close"
+									data-dismiss="modal"
+									aria-label="Close"
+								></button>
+							</div>
+							<div class="modal-body">
+								<?php echo do_shortcode( '[contact-form-7 id="77" title="Заказать игру"]' ); ?>
+							</div>
+						</div>
+					</div>
+				</div>
 				<a
 					class="btn order ml-4 mr-4"
 					type="button"
