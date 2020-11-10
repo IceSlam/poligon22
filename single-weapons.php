@@ -56,7 +56,12 @@ get_header();
 		</div>
 		<div class="row mt-3">
 			<div class="col-lg-12 d-flex justify-content-center">
-				<a href="#" class="btn order ml-4 mr-4">
+				<a
+					class="btn order ml-4 mr-4"
+					type="button"
+					data-toggle="modal"
+					data-target="#order-game"
+				>
 					Заказать игру
 				</a>
 			</div>
