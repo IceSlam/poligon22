@@ -162,6 +162,9 @@
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
+              <h5 class="modal-title" id="order-game-label">
+                Заказать игру
+              </h5>
               <button
                 type="button"
                 class="btn-close"
@@ -170,43 +173,6 @@
               ></button>
             </div>
             <div class="modal-body">
-          <!--     <div class="mb-3">
-                <label for="order-game-name" class="form-label">
-                  Ваше имя*
-                </label>
-                <input type="text" class="form-control" id="order-game-name" aria-describedby="order-game-name-help" required>
-                <div id="order-game-name-help" class="form-text">
-                  * Обязательно для заполнения
-                </div>
-              </div>
-              <div class="mb-3">
-                <label for="order-game-email" class="form-label">
-                  Ваше email*
-                </label>
-                <input type="email" class="form-control" id="order-game-email" aria-describedby="order-game-email-help" required>
-                <div id="order-game-email-help" class="form-text">
-                  * Обязательно для заполнения
-                </div>
-              </div>
-              <div class="mb-3">
-                <label for="order-game-tel" class="form-label">
-                  Телефон
-                </label>
-                <input type="tel" class="form-control" id="order-game-tel" aria-describedby="order-game-tel-help" required>
-              </div>
-              <div class="mb-3">
-                <label for="order-game-tel" class="form-label">
-                  Сообщение
-                </label>
-                <textarea type="textarea" class="form-control" id="order-game-tel" aria-describedby="order-game-tel-help" required></textarea>
-              </div>
-              <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="order-game-accept" required>
-                <label class="form-check-label" for="order-game-acept">
-                  Нажимая кнопку "Заказать" Вы даёте свое согласие на обработку персональных данных
-                </label>
-              </div>
-              <button type="submit" class="btn d-block modal-submit">Заказать</button> -->
               <?php echo do_shortcode( '[contact-form-7 id="76" title="Заказать игру"]' ); ?>
             </div>
           </div>
