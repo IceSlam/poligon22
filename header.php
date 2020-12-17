@@ -59,16 +59,6 @@
 		            </a> <?
 							}
             ?>
-            <br>
-						<?
-            	$poligon22_email = get_option( 'poligon22_email' );
-              	if ($poligon22_email) { ?>
-		            <a href="mailto:<? echo get_option( 'poligon22_email' ); ?>" class="email">
-									Эл. почта:
-		              <? echo get_option( 'poligon22_email' ); ?>
-		            </a> <?
-							}
-            ?>
           </div>
           <div class="is-header__socials">
 						<?

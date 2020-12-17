@@ -20,44 +20,44 @@ get_header();
 
 		<section class="is-slider">
 			<div class="is-slider__wrapper">
-				<div uk-slider="center: true; finite: true; autoplay: true;">
+			  <div uk-slider="center: true; autoplay: true;">
 
-					<div class="uk-position-relative uk-light" tabindex="-1">
+			    <div class="uk-position-relative uk-light" tabindex="-1">
 
-							<ul class="uk-slider-items uk-child-width-1@s uk-grid">
-								<?php while ( have_rows('index_slides') ) : the_row(); ?>
-									<li>
-										<div class="is-slider__slide" style="background: linear-gradient(270deg, rgba(0, 0, 0, 0.3) 0%, rgba(0,0,0,.6) 100%), url(<? the_sub_field('background'); ?>);background-position: <? the_sub_field('position_horizontal'); ?>% <? the_sub_field('position_vertical'); ?>%	 !important;">
-											<div class="is-slider__slide-content container-xxl container-xl container">
-												<div class="col-lg-7">
-													<h4 class="sub">
-														<? the_sub_field('subtitle'); ?>
-													</h4>
-													<h3 class="title">
-														<? the_sub_field('title'); ?>
-													</h3>
-													<p class="description">
-														<? the_sub_field('description'); ?>
-													</p>
-												</div>
-											</div>
-										</div>
-									</li>
-              	<?php endwhile; ?>
-							</ul>
+			        <ul class="uk-slider-items uk-child-width-1@s uk-grid">
+			          <?php while ( have_rows('index_slides') ) : the_row(); ?>
+			            <li>
+			              <div class="is-slider__slide" style="background: linear-gradient(270deg, rgba(0, 0, 0, 0.3) 0%, rgba(0,0,0,.6) 100%), url(<? the_sub_field('background'); ?>);background-position: <? the_sub_field('position_horizontal'); ?>% <? the_sub_field('position_vertical'); ?>%	 !important;">
+			                <div class="is-slider__slide-content container-xxl container-xl container">
+			                  <div class="col-lg-7">
+			                    <h4 class="sub">
+			                      <? the_sub_field('subtitle'); ?>
+			                    </h4>
+			                    <h3 class="title">
+			                      <? the_sub_field('title'); ?>
+			                    </h3>
+			                    <p class="description">
+			                      <? the_sub_field('description'); ?>
+			                    </p>
+			                  </div>
+			                </div>
+			              </div>
+			            </li>
+			          <?php endwhile; ?>
+			        </ul>
 
-							<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slider-item="previous">
-								<img src="<? echo get_template_directory_uri() . "/assets/img/slider_prev.svg" ?>" alt="">
-							</a>
-							<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slider-item="next">
-								<img src="<? echo get_template_directory_uri() . "/assets/img/slider_prev.svg" ?>" alt="" style="transform: rotate(180deg)">
-							</a>
+			        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slider-item="previous">
+			          <img src="<? echo get_template_directory_uri() . "/assets/img/slider_prev.svg" ?>" alt="">
+			        </a>
+			        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slider-item="next">
+			          <img src="<? echo get_template_directory_uri() . "/assets/img/slider_prev.svg" ?>" alt="" style="transform: rotate(180deg)">
+			        </a>
 
-					</div>
+			    </div>
 
-					<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+			    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
 
-				</div>
+			  </div>
 			</div>
 		</section>
 
@@ -75,14 +75,14 @@ get_header();
             <p>
               Хотите получить фотографии?
             </p>
+	          <a class="btn is-endgame__btn mb-5"
+							type="button"
+							data-toggle="modal"
+							data-target="#get-photo"
+						>
+	            Получить фотографии
+	          </a>
           </div>
-          <a class="btn is-endgame__btn"
-						type="button"
-						data-toggle="modal"
-						data-target="#get-photo"
-					>
-            Получить фотографии
-          </a>
 					<div
 		        class="modal fade order-game"
 		        id="get-photo"
@@ -228,12 +228,6 @@ get_header();
           </h2>
         </div>
         <div class="col-lg-3">
-          <a href="<? echo get_category_link(5); ?>" class="btn view btn-block text-right">
-            <img src="<? echo get_template_directory_uri() . '/assets/img/weapons_view.svg' ?>" alt="">
-            <span>
-              Смотреть все оружие
-            </span>
-          </a>
         </div>
       </div>
       <div class="row mt-5">
@@ -273,6 +267,13 @@ get_header();
 					wp_reset_postdata();
 				?>
       </div>
+			<div class="row">
+				<div class="offset-md-8 col-md-4 mt-3">
+					<a href="<? echo get_category_link(5); ?>" class="btn view">
+						Смотреть все оружие
+					</a>
+				</div>
+			</div>
     </section>
 
 		<section class="is-features">
