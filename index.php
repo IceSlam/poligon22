@@ -69,13 +69,15 @@ get_header();
         <div class="col-lg-9 is-endgame__inner">
           <img src="<? echo get_template_directory_uri() . "/assets/img/endgame_inner_bg.png" ?>" alt="" class="img-fluid d-block img">
           <div class="is-endgame__inner-content">
-            <p>
-              У вас прошла игра?
-            </p>
-            <p>
-              Хотите получить фотографии?
-            </p>
-	          <a class="btn is-endgame__btn mb-5"
+            <div class="ml-4">
+							<p>
+	              У вас прошла игра?
+	            </p>
+	            <p>
+	              Хотите получить фотографии?
+	            </p>
+            </div>
+	          <a class="btn is-endgame__btn ml-5"
 							type="button"
 							data-toggle="modal"
 							data-target="#get-photo"
