@@ -1,4 +1,4 @@
-# Полигон22
+# Полигон
 
 WordPress-тема оформления сайта компании Полигон22 - Лазертаг от команды профессионалов
 
@@ -20,8 +20,8 @@ WordPress-тема оформления сайта компании Полиго
 
 * Разработчик: [IceSlam](https://iceslam.ru/ "IceSlam")
 * Компания-разработчик: [ИА Альянс+](https://alianscompany.ru "Интернет-агентство Альянс+")
-* Версия: 2.0
-* Инструменты: Bootstrap 5 Alpha, Material Design UI Kit 2.0, UIKit 3, FancyBox 3, FontAwesome 5, jQuery 3.5
+* Версия: 2.0.3
+* Инструменты: Bootstrap 5.0 alpha-1, MDB UI Kit 2.0.0, UIKit 3.5.9, FancyBox 3.5.7, FontAwesome 5.15.1, jQuery 3.5.1, Semantic UI 2.4.2
 
 ---
 
