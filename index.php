@@ -319,14 +319,14 @@ get_header();
             Фотогалерея
           </h2>
         </div>
-        <div class="col-lg-6">
+        <!-- <div class="col-lg-6">
           <a href="<? echo get_category_link(2); ?>" class="btn view btn-block text-right">
             <img src="<? echo get_template_directory_uri() . '/assets/img/weapons_view.svg' ?>" alt="">
             <span>
               Смотреть все фотографии
             </span>
           </a>
-        </div>
+        </div> -->
       </div>
       <div class="row mt-5">
 			<div class="col-lg-3">
@@ -365,6 +365,14 @@ get_header();
           </div>
         </div>
       </div>
+
+			<div class="row">
+				<div class="offset-md-8 col-md-4 mt-3">
+					<a href="<? echo get_category_link(2); ?>" class="btn view">
+						Смотреть все фотографии
+					</a>
+				</div>
+			</div>
     </section>
 
 		<section class="is-videoreviews container-xxl container-xl container mt-2 mb-2">
