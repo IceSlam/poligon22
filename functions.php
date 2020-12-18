@@ -228,7 +228,7 @@ echo '
 add_action('wp_before_admin_bar_render', 'poligon22_custom_logo');
 
 function remove_footer_admin () {
-	echo '<p>Тема Полигон 2.0 разработана <a href="https://iceslam.ru" target="_blank">IceSlam</a> в компании <a href="https://alianscompany.ru" target="_blank">Альянс+</a>. Работает на WordPress</p>';
+	echo '<p>Тема Полигон22 разработана <a href="https://iceslam.ru" target="_blank">IceSlam</a> в компании <a href="https://alianscompany.ru" target="_blank">Альянс+</a>. Работает на WordPress</p>';
 }
 add_filter('admin_footer_text', 'remove_footer_admin');
 
@@ -457,3 +457,5 @@ function new_excerpt_more( $more ) {
 return '...';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+add_filter('show_admin_bar', '__return_false');
