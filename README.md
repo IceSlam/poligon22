@@ -10,7 +10,7 @@ WordPress-тема оформления сайта компании Полиго
 
 2. При помощи консольной команды Git копируем тему из репозитория**:
 
-  `git clone https://git.onerequest.ru/iceslam/poligon22.git`
+  `git clone https://github.com/iceslam/poligon22.git`
 
 3. Выбрать тему из списка доступных: ПУ -> Внешний вид -> Темы -> Полигон22 -> Активировать
 
