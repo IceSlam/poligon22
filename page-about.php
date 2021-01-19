@@ -56,8 +56,7 @@ get_header();
 				</div>
 				<div class="col-lg-3">
 					<a href="<? echo get_category_link(5); ?>" class="btn view btn-block text-right">
-						<img src="<? echo get_template_directory_uri() . '/assets/img/weapons_view.svg';?>" alt="">
-						<span>
+						<span style="border-bottom:none">
 							Смотреть все оружие
 						</span>
 					</a>

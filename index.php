@@ -46,11 +46,11 @@ get_header();
 			          <?php endwhile; ?>
 			        </ul>
 
-			        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slider-item="previous">
-			          <img src="<? echo get_template_directory_uri() . "/assets/img/slider_prev.svg" ?>" alt="">
+			        <a class="uk-position-center-left uk-position-small uk-hidden-hover d-flex align-items-center justify-content-center" href="#" uk-slider-item="previous" style="border-radius:50%;border:2px solid #fff;width:48px;height:48px;">
+			          <i class="fas fa-arrow-left" style="font-size:1.5em;"></i>
 			        </a>
-			        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slider-item="next">
-			          <img src="<? echo get_template_directory_uri() . "/assets/img/slider_prev.svg" ?>" alt="" style="transform: rotate(180deg)">
+			        <a class="uk-position-center-right uk-position-small uk-hidden-hover d-flex align-items-center justify-content-center" href="#" uk-slider-item="next" style="border-radius:50%;border:2px solid #fff;width:48px;height:48px;">
+			          <i class="fas fa-arrow-right" style="font-size:1.5em;"></i>
 			        </a>
 
 			    </div>
